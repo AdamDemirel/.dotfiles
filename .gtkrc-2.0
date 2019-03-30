@@ -1,0 +1,9 @@
+# [Settings]
+gtk-icon-theme-name = Papirus
+gtk-theme-name = Papirus
+gtk-font-name= Papirus
+gtk-fallback-icon-theme= Papirus
+
+gtk-button-images=1
+gtk-menu-images=1
+gtk-toolbar-style=GTK_TOOLBAR_BOTH_HORIZ
