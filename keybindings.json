@@ -1,0 +1,24 @@
+// vscode
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "key": "ctrl+b",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+        "snippet": "binding.pry"
+    }
+  },
+  {
+    "key": "ctrl+shift+b",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "turboConsoleLog.displayLogMessage"
+  },
+  {
+    "key": "ctrl+alt+l",
+    "command": "-turboConsoleLog.displayLogMessage"
+  }
+]
