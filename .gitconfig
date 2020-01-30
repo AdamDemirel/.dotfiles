@@ -1,9 +1,12 @@
 [user]
-	email = adxm@msn.com
+	email = [removed]
 	name = Adam Demirel
 [core]
-	autocrlf = input
+	autocrlf = false
 	safecrlf = true
+	editor = code
+	filemode = false
+	repositoryformatversion = 0
 [alias]
 	co = checkout
 	ci = commit
@@ -12,5 +15,27 @@
 	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
 	type = cat-file -t
 	dump = cat-file -p
+	unstage = rm --cached
+	last = log -1 HEAD
+	unstagerm = reset HEAD --
+	ss = status -s
+	l = log  
+	ammend = commit --ammend
+	s = status
+	unchange = checkout --
+	f = fetch
 [pager]
 	branch = false
+[include]
+  path = /home/adam/.netlify/helper/git-config
+[include]
+  path = /home/adam/.netlify/helper/git-config
+[include]
+  path = /home/adam/.netlify/helper/git-config
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[credential]
+	helper = cache --timeout=9999999999
