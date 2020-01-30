@@ -1,17 +1,12 @@
-// vscode
-// Place your key bindings in this file to override the defaultsauto[]
+# lives at /home/adam/.config/Code - OSS/User/keybindings.json
 [
   {
-    "key": "ctrl+b",
-    "command": "editor.action.insertSnippet",
-    "when": "editorTextFocus",
-    "args": {
-        "snippet": "binding.pry"
-    }
+    "key": "alt+right",
+    "command": "workbench.action.nextEditor"
   },
   {
-    "key": "ctrl+shift+b",
-    "command": "workbench.action.toggleSidebarVisibility"
+    "key": "alt+left",
+    "command": "workbench.action.previousEditor"
   },
   {
     "key": "ctrl+l",
