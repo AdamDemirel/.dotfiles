@@ -1,88 +1,46 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$HOME/bin:/usr/local/bin/:$PATH
+# Paths
+# Add new path with colon separation
+export PATH=$HOME/bin:/usr/local/bin/:/home/adam/Code/emsdk:/home/adam/Code/emsdk/upstream/emscripten:$PATH
 
-# Path to your oh-my-zsh installation.
-export ZSH="/home/adam/.oh-my-zsh"
+if [ -f '/home/adam/.netlify/helper/path.zsh.inc' ]; then source '/home/adam/.netlify/helper/path.zsh.inc'; fi # Adds Netlify's Git Credential Helper to PATH
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+#--------------------------------------------------------------
+
+# ZSH theme (https://github.com/robbyrussell/oh-my-zsh/wiki/Themes)
 ZSH_THEME="bunnyruni"
 
-# Uncomment the following line to use case-sensitive completion.
+#--------------------------------------------------------------
+
+# ZSH Flags (Commented out = disabled)
 # CASE_SENSITIVE="true"
-
-# Uncomment the following line to use hyphen-insensitive completion.
-# Case-sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
-
-# Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
-
-# Uncomment the following line to disable colors in ls.
+# HYPHEN_INSENSITIVE="true" # case-sens must be off. _ and - will be interchangeable.
+# DISABLE_AUTO_UPDATE="true" # Disables bi-weekly auto update checks
+# export UPDATE_ZSH_DAYS=13 # change how often to auto-update (in days)
 # DISABLE_LS_COLORS="true"
-
-# Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment the following line to enable command auto-correction.
+# DISABLE_AUTO_TITLE="true" # Terminal Title
 # ENABLE_CORRECTION="true"
+# COMPLETION_WAITING_DOTS="true" # display red dots whilst waiting for completion
 
-# Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
-
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
-
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# You can set one of the optional three formats:
-# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# or set a custom format using the strftime function format specifications,
-# see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
-
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
-
-# Which plugins would you like to load?
-# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
+# ZSH Plugins, loaded from ~/.oh-my-zsh/plugins/
+# Space separated values. eg plugins=(git ruby)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
 )
 
-source $ZSH/oh-my-zsh.sh
-
 #--------------------------------------------------------------
 
-# User configuration
-
-# ssh
+## ENVIRONMENT VARIABLES
+export GIT_EDITOR='nano'
+export EDITOR="/bin/code --wait" # Adds vscode to the $EDITOR global for rails credentials
+export NVM_DIR="$HOME/.nvm"
+export ZSH="/home/adam/.oh-my-zsh" # Path to your oh-my-zsh installation.
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 #--------------------------------------------------------------
 
-## ENVIRONMENT VARIABLES
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-PATH="/home/adam/.gem/ruby/2.6.0/bin":$PATH
-
-export GIT_EDITOR='nano'
-
-# Adds vscode to the $EDITOR global for rails credentials
-export EDITOR="/bin/code --wait"
-
-export NVM_DIR="$HOME/.nvm"
+# LOADERS
+source $ZSH/oh-my-zsh.sh # Enables oh-my-zsh
 . "$NVM_DIR/nvm.sh" # This loads nvm
 
 #--------------------------------------------------------------
@@ -119,7 +77,8 @@ alias nrb="npm run build"
 alias st="npm start"
 alias launch="npm run build && npx http-server dist/"
 alias l="launch"
-alias resource="source ~/.bashrc && source ~/.zshrc"
+# alias resource="source ~/.bashrc && source ~/.zshrc"
+alias resource="source ~/.zshrc"
 alias dexus="cd /home/adam/Code/Work/dex012-brainwaves-brain/ && nvm use"
 alias babel="npx babel --watch src --out-dir . --presets react-app/prod"
 alias log="DEBUG=\"brain:*,-brain:*-trace\" npm start"
@@ -150,12 +109,9 @@ function mkcd {
   fi
 }
 
+#--------------------------------------------------------------
 
-# The next line updates PATH for Netlify's Git Credential Helper.
-if [ -f '/home/adam/.netlify/helper/path.zsh.inc' ]; then source '/home/adam/.netlify/helper/path.zsh.inc'; fi
-
-
-# automatically calls `nvm use` in a directory with .nvmrc
+# Automatically calls `nvm use` in a directory with .nvmrc
 autoload -U add-zsh-hook
 load-nvmrc() {
   local node_version="$(nvm version)"
@@ -176,3 +132,5 @@ load-nvmrc() {
 }
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
+
+#--------------------------------------------------------------
