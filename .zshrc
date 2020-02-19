@@ -32,7 +32,7 @@ plugins=(
 
 ## ENVIRONMENT VARIABLES
 export GIT_EDITOR='nano'
-export EDITOR="/bin/code --wait" # Adds vscode to the $EDITOR global for rails credentials
+export EDITOR=/usr/bin/nano
 export NVM_DIR="$HOME/.nvm"
 export ZSH="/home/adam/.oh-my-zsh" # Path to your oh-my-zsh installation.
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
