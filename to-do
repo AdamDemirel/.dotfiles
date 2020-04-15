@@ -1,0 +1,21 @@
+Before reinstall:
+- Install iso, burn with etcher or dd
+- Check the checksum of the iso https://wiki.manjaro.org/index.php?title=Burn_an_ISO_File
+
+To automate the following:
+- sudo pacman -Syuu
+- Install yaourt (put this after symlinks, bc need the -y flag)
+- Yaourt google-chrome and then login to google
+- Sync google bookmarks + extensions (takes a while)
+- Sync up start menu (using menulibre?)
+- Disable screensavers
+- Change power management settings
+
+Software:
+- Download and setup papirus icons https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
+- set resolution (1600x900)?
+- Minimise taskbar to bottom right
+- install network-manager or wicd
+- install ksysguard (task manager) && htop
+- install seahorse (gui for gnome-keyring)  https://wiki.archlinux.org/index.php/GNOME/Keyring
+- Install nano, kate, and vscode (text editors) (and then run extension install from above)
