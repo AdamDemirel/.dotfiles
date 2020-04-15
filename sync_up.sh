@@ -1,6 +1,8 @@
 #!/usr/bin/bash
 
-git add . && git commit -m "sync up"
+git add .
+git commit -m "sync up"
+git push origin master
 # git clone git@github.com:AdamDemirel/.dotfiles.git
 
 

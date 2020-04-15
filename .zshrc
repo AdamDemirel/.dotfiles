@@ -107,8 +107,8 @@ alias glog="git log --oneline"
 alias c="code"
 alias t="touch"
 alias path="which"
-alias sync_down="cat /home/adam/.config/Code - OSS/User/extensions.txt"
-alias sync_up="code --list-extensions >> /home/adam/.config/Code - OSS/User/extensions.txt"
+alias sync_up="cd ~/.dotfiles/ && ./sync_up.sh"
+alias sync_down="cd ~/.dotfiles/ && ./sync_up.sh"
 
 function mkcd {
   if [ ! -n "$1" ]; then
