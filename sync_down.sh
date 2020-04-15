@@ -8,7 +8,7 @@ cd ~ && git clone git@github.com:AdamDemirel/.dotfiles.git
 
 echo "setting up symlinks"
 rm ~/.zshrc
-ln -s ~/.zshrc ~/.dotfiles/.zshrc
+ln -s ~/.dotfiles/.zshrc ~/.zshrc
 
 # git clone git@github.com:AdamDemirel/.dotfiles.git
 
