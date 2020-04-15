@@ -1,0 +1,11 @@
+# Ignore everything in ~
+*
+
+# Except...
+!.gitignore
+!.zshrc
+!.gitconfig
+!.yaourtrc
+!~/.config/Code - OSS/User/keybindings.json
+!~/.config/Code - OSS/User/settings.json
+!~/.config/Code - OSS/User/extensions.txt
