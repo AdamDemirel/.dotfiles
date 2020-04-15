@@ -3,7 +3,7 @@
 git add .
 git commit -m "sync up"
 git push origin master
-# git clone git@github.com:AdamDemirel/.dotfiles.git
+
 
 
 # alias sync_up="code --list-extensions >> /home/adam/.config/Code - OSS/User/extensions.txt"

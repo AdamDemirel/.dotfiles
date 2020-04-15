@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-rm -rf ~/.dotfiles && git clone git@github.com:AdamDemirel/.dotfiles.git
+rm -rf ~/.dotfiles && cd ~ && git clone git@github.com:AdamDemirel/.dotfiles.git
 
 echo "hello";
 # git clone git@github.com:AdamDemirel/.dotfiles.git
