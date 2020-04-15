@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 echo "generating vscode extension list..."
-code --list-extensions >> ~/.config/Code\ -\ OSS/User/extensions.txt
+code --list-extensions >> ~/.dotfiles/extensions.txt
 
 git add .
 git commit -m "sync up"
