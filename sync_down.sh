@@ -7,6 +7,7 @@ echo "downloading new dotfiles..."
 cd ~ && git clone git@github.com:AdamDemirel/.dotfiles.git
 
 echo "setting up symlinks"
+rm ~/.zshrc
 ln -s ~/.zshrc ~/.dotfiles/.zshrc
 
 # git clone git@github.com:AdamDemirel/.dotfiles.git
