@@ -17,5 +17,110 @@ Software:
 - Minimise taskbar to bottom right
 - install network-manager or wicd
 - install ksysguard (task manager) && htop
-- install seahorse (gui for gnome-keyring)  https://wiki.archlinux.org/index.php/GNOME/Keyring
+- install seahorse (gui for gnome-keyring)  https://wiki.archlinux.org/index.php/GNOME/Keyring (saves skype login)
 - Install nano, kate, and vscode (text editors) (and then run extension install from above)
+
+- Install konsole, or xfce4-terminal
+- install zsh, and oh-my-zsh https://github.com/ohmyzsh/ohmyzsh + theme https://github.com/jopcode/oh-my-zsh-bunnyruni-theme
+- xkill
+- yaourt fluxgui, and set temp to min, latitude: -33.7502
+- gimp, mypaint, gwenview/ristretto
+- variety-git and download google earth view, and set
+- gnome-screenshot, keybind to printscreen
+- keybind terminal opening to f12 (xfce4-terminal/konsole)
+- vlc, cheese, transmission, kazam, obs project, zoom, slack
+- ffmpeg, banshee?, 
+- skype-for-linux or yaourt -S skypeforlinux-stable-bin
+- steam
+- https://create.arduino.cc/getting-started/plugin ?
+
+- For slack, remove default start script and place the following with sudo chmod +x to it in /usr/local/bin and add back to autostart scripts: #!/bin/bash env LD_PRELOAD=/usr/lib/libcurl.so.3 /usr/bin/slack %U -u &
+- okular, libreoffice, anki, thunar (and set default)
+- gparted, etcher
+
+---------------
+
+# devtools
+pacman:
+- git 
+- npm/node & nvm, and install latest stable, and set to default
+- automate git setup https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent Add ssh keys https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent and cat it for https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account
+
+- tldr
+- httpie
+- Sudo pacman -S aws-cli (cli for access aws via cli) (and `aws configure` to setup, then `aws s3 ls` to see buckets)
+
+yaourt:
+- heroku-cli?, pgcli?, mongodb? compass, postman, insomnia
+- bat
+
+npm i -g gulp
+
+-------------
+
+Uninstall:
+- thunderbird
+sudo pacman -R dolphin dolphin-plugins kde-servicemenus-rootactions (latter 2 are dolphin dependencies)
+
+
+----------
+
+Manjaro fixes:
+**Problem: no gpg keys using Pacman**
+1. find /var/cache/pacman/pkg/ -iname "*.part" -exec rm {} \;
+2. sudo ntpdate -vu time.nist.gov (updates time)
+3. sudo pacman-key --delete 91FFE0700E80619CEB73235CA88E23E377514E00
+4. sudo pacman-key --populate archlinux
+5. Sudo pacman -S archlinux-keyring
+6. Sudo pacman -Syuu
+
+**Problem: time servers on computer out of sync, ie cant access sites online**
+1. Sudo systemctl stop ntpd
+2. Sudo ntpdate 129.6.15.28 (or time.nist.gov if 129 doesnt work)
+3. Sudo systemctl start ntpd
+4. Sudo systemctl enable ntpd
+Or [https://wiki.archlinux.org/index.php/installation_guide#Update_the_system_clock](https://wiki.archlinux.org/index.php/installation_guide#Update_the_system_clock)
+(this worked first time) > [https://www.tecmint.com/set-time-timezone-and-synchronize-time-using-timedatectl-command/](https://www.tecmint.com/set-time-timezone-and-synchronize-time-using-timedatectl-command/) (this worked second)
+
+**Problem: alt+f4 not closing windows**
+- Go to global keyboard shortcuts
+- Go to KWIN settings
+- Set alt f4
+- Note: To switch btw function keys and f keys as default, fn+esp
+
+**Problem: Hitting touchpad while typing**
+- Go to touchpad settings -> enable/disable touchpad tab -> disable touchpad when mouse is plugged in (and remove microsoft nano receiver mouse from ignored devices list)
+
+Problem: Konsole / Terminal Size : Set it to be the same as when it snaps to the corner. In my current case I’m using Konsole and I set the columns to 96 and rows to 21. And disable use current window size in next startup in general tab.
+
+disable manjaro setting that makes the window snap to top left corner with mouse hover: Solution: open start menu > screen edges > no action for top left
+
+**Problem: Thunar wouldn’t use Papirus icon theme.**
+First install: `yaourt papirus-icon-theme`
+Solution: [https://wiki.archlinux.org/index.php/GTK%2B#Basic_theme_configuration](https://wiki.archlinux.org/index.php/GTK%2B#Basic_theme_configuration) Change /usr/share/gtk3.0/settings.ini to `Papirus` on both themes. And then resave papirus as icons in menu>icons
+Solution2 if above doesnt work: `pkill thunar && rm -rf ~/.thumbnails ~/.cache/thumbnails` (clears the icon cache)
+- If all else fails, logout and login (workedonce)
+- latest solution: install `lxappearance` and set it through there which generates the correct gtkrc file [https://bbs.archlinux.org/viewtopic.php?id=98261](https://bbs.archlinux.org/viewtopic.php?id=98261)
+
+**Problem:** getting my logitech k810 keyboard to work/pair with bluetoothctl
+Solution:
+1. First and foremost (i learnt my lesson of 2 days wasted time before figuring out this solution, install this hcd file [https://bbs.archlinux.org/viewtopic.php?id=204739](https://bbs.archlinux.org/viewtopic.php?id=204739) [https://memcpy.io/fixing-bluetooth-on-the-xps-15-9550-on-ubuntu.html](https://memcpy.io/fixing-bluetooth-on-the-xps-15-9550-on-ubuntu.html) and put it in and simply put it in **/lib/firmware/brcm/BCM-0a5c-6410.hcd** (this will solve the issue of the keyboard not showing up in bluetoothctl), followed by rebooting device
+- Install `bluez bluez-utils-compat` (blue-utils has bluetoothctl in it, utils-compat in yaourt)
+- Modprobe btusb
+- Systemctl restart bluetooth (or systemctl stop bluetooth, systemctl start bluetooth)
+- Bluetoothctl
+- Power off
+- Power on
+- agent KeyboardOnly
+- default-agent
+- Scan on
+- Pair 34:88:5D:3C:93:34
+- Enter code
+- Trust 34:88:5D:3C:93:34
+- Connect 34:88:5D:3C:93:34
+[https://wiki.archlinux.org/index.php/bluetooth](https://wiki.archlinux.org/index.php/bluetooth)
+
+**Problem: laptop battery doesn’t last long**
+Solution: `powertop` is a power management program that is installed by default. Run it from cli and tab to the ‘tunables’ tab. Then click enter on all the records that have ‘bad’ set to set them to ‘good’.
+[https://wiki.archlinux.org/index.php/powertop](https://wiki.archlinux.org/index.php/powertop)
+[https://medium.com/@tomwwright/better-battery-life-on-ubuntu-17-10-4588b7f72def](https://medium.com/@tomwwright/better-battery-life-on-ubuntu-17-10-4588b7f72def)

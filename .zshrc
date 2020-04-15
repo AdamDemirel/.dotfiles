@@ -109,6 +109,7 @@ alias t="touch"
 alias path="which"
 alias sync_up="cd ~/.dotfiles/ && ./sync_up.sh"
 alias sync_down="cd ~/.dotfiles/ && ./sync_up.sh"
+alias cat="bat"
 
 function mkcd {
   if [ ! -n "$1" ]; then
