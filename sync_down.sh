@@ -16,8 +16,3 @@ ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/keybindings.json ~/.config/Code\ -\ OSS/User/keybindings.json
 ln -s ~/.dotfiles/settings.json ~/.config/Code\ -\ OSS/User/settings.json
 ln -s ~/.dotfiles/extensions.txt ~/.config/Code\ -\ OSS/User/extensions.txt
-
-# git clone git@github.com:AdamDemirel/.dotfiles.git
-
-
-
