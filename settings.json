@@ -40,7 +40,7 @@
   "editor.wordWrap": "on",
   "editor.maxTokenizationLineLength": 50000,
   "editor.cursorBlinking": "smooth",
-  "editor.acceptSuggestionOnEnter": "off",
+  // "editor.acceptSuggestionOnEnter": "off",
   "editor.cursorSmoothCaretAnimation": true,
   "json.maxItemsComputed": 50000,
   "explorer.sortOrder": "type", // filesFirst, def: alphabet, modified
