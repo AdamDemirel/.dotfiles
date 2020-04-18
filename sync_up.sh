@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 echo "generating vscode extension list..."
 code --list-extensions > ~/.dotfiles/extensions.txt

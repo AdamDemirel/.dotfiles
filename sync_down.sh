@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 echo "removing old dotfiles..."
 rm -rf ~/.dotfiles
