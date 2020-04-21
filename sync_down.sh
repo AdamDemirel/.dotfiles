@@ -5,7 +5,7 @@ xrandr --output HDMI-1 --mode 2560x14 # Desktop
 xrandr --output eDP-1 --mode 1600x900 # Laptop
 
 echo "removing old dotfiles..."
-rm -rf ~/.dotfiles
+# rm -rf ~/.dotfiles
 
 echo "downloading new dotfiles..."
 cd ~ && git clone git@github.com:AdamDemirel/.dotfiles.git

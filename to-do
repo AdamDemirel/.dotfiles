@@ -14,6 +14,7 @@ to do / automate:
 - For slack, remove default start script and place the following with sudo chmod +x to it in /usr/local/bin and add back to autostart scripts: #!/bin/bash env LD_PRELOAD=/usr/lib/libcurl.so.3 /usr/bin/slack %U -u & ?
 - Sync up start menu (using menulibre?): Firefox, konversation, libreoffice writer, konsole, skype, kruler
 - Change power management settings
+- add error logging to syncdown script
 
 -------------
 
