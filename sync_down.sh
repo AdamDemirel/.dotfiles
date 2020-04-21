@@ -116,7 +116,7 @@ echo "logout and login to update papirus icons"
 # or `wget -qO- https://git.io/papirus-icon-theme-install | sh` from https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
 
 echo "setting flux up..."
-xflux -l 33.7502 -k 2000
+xflux -l -33.8688 -k 2000
 
 echo "setting up wallpaper..."
 rm -rf ~/Pictures/earthview
