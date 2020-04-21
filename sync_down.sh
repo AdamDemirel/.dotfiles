@@ -59,7 +59,11 @@ $image_editor gimp steam $audio_editor $shell $shell_text_editor \
 $gui_text_editor $code_editor htop ksysguard $wallpaper_changer \
 $video_player $image_capture $video_capture gparted etcher \
 $pdf_viewer anki $skype_login_fix $skype_login_fix_gui \
-discord libreoffice $file_manager fzf
+discord libreoffice $file_manager fzf tldr whois httpie aws-cli \
+heroku-cli ack uname tree netcat git-lfs firefox sha256sum \
+kruler gvfs-mount gvfs-smb ifconfig zip nslookup flatpak fondu \
+solaar docker docker-compose 
+# pandoc
 
 echo "installing yaourt..."
 sudo pacman -S --needed base-devel git wget yajl --noconfirm
@@ -77,8 +81,20 @@ audio_listener=banshee
 teleconference=zoom
 bittorrent_client=transmission-gtk
 gif_recorder=kazam
+
 yaourt -S fluxgui google-chrome xorg-xkill skypeforlinux-stable-bin $audio_listener \
 oh-my-zsh-git $teleconference slack-desktop $bittorrent_client $gif_recorder \
+pgcli bat postman insomnia mongodb mongodb-compass build-essentials calibre hub \
+fira-code
+
+echo "installing npm globals..."
+npm i -g gulp next eslint eslint-plugin-prettier netlify-cli webpack babel-cli surge
+# react-static
+
+echo "installing and setting node..."
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+nvm install 12.14.0
+nvm alias default 12.14.0
 
 echo "removing unused packages..."
 sudo pacman -R dolphin dolphin-plugins kde-servicemenus-rootactions \
@@ -95,9 +111,16 @@ echo "setting up papirus icon theme..."
 yaourt -S papirus-icon-theme
 pkill thunar && rm -rf ~/.thumbnails ~/.cache/thumbnails # clears icon cache
 sudo pacman -S lxappearance # set papirus through here, generates the correct GTKrc file https://bbs.archlinux.org/viewtopic.php?id=98261
-echo "Logout and login to update papirus icons"
+echo "logout and login to update papirus icons"
 # if all else fails, change /usr/share/gtk3.0/settings.ini to `Papirus` on both themes. And then resave papirus as icons in menu>icons (oldest solution)
 # or `wget -qO- https://git.io/papirus-icon-theme-install | sh` from https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
 
 echo "setting flux up..."
 xflux -l 33.7502 -k 2000
+
+echo "setting up wallpaper..."
+rm -rf ~/Pictures/earthview
+cd ~/.dotfiles/wallpapers && ./run.sh
+
+echo "configure manual steps"
+# in variety, set wallpaper directory to ~/Pictures/earthview
