@@ -45,7 +45,11 @@ source $ZSH/oh-my-zsh.sh # Enables oh-my-zsh
 
 #--------------------------------------------------------------
 
+job_name=~/Code/Projects/prc27_apsa
+
 ## ALIASES
+alias job="xdg-open https://www.notion.so/ && $job_name && code . && cd design/ && st"
+alias jobdir="cd $job_name"
 alias cp="cp -i"                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
@@ -98,7 +102,6 @@ alias serve="npm run serve"
 alias portfolio="cd /home/adam/Code/myportfolio/content/"
 alias gp="git add . && git commit -m 'random change' && git push"
 alias calc="node -p"
-alias job="xdg-open https://www.notion.so/ && ~/Code/Projects/prc27_apsa && code . && cd design/ && st"
 alias dockerclean="docker volume prune && docker rm $(docker ps -a -q) -f"
 #alias wp="docker-compose exec wordpress php -d memory_limit=512M /usr/local/bin/wp --allow-root" 
 alias wpexport="wp export --stdout --skip_comments > config/dev-content.xml\n"
@@ -111,6 +114,7 @@ alias sync_up="cd ~/.dotfiles/ && ./sync_up.sh"
 alias sync_down="cd ~/.dotfiles/ && ./sync_up.sh"
 alias cat="bat"
 alias yoghurt="yaourt"
+alias dotfiles="cd ~/.dotfiles"
 
 function mkcd {
   if [ ! -n "$1" ]; then

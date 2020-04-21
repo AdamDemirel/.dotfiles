@@ -59,7 +59,7 @@ $image_editor gimp steam $audio_editor $shell $shell_text_editor \
 $gui_text_editor $code_editor htop ksysguard $wallpaper_changer \
 $video_player $image_capture $video_capture gparted etcher \
 $pdf_viewer anki $skype_login_fix $skype_login_fix_gui \
-discord libreoffice $file_manager
+discord libreoffice $file_manager fzf
 
 echo "installing yaourt..."
 sudo pacman -S --needed base-devel git wget yajl --noconfirm
