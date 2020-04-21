@@ -62,7 +62,7 @@ $pdf_viewer anki $skype_login_fix $skype_login_fix_gui \
 discord libreoffice $file_manager fzf tldr whois httpie aws-cli \
 heroku-cli ack uname tree netcat git-lfs firefox sha256sum \
 kruler gvfs-mount gvfs-smb ifconfig zip nslookup flatpak fondu \
-solaar docker docker-compose 
+solaar docker docker-compose gnome-screenshot
 # pandoc
 
 echo "installing yaourt..."
