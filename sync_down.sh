@@ -124,5 +124,7 @@ echo "setting up wallpaper..."
 rm -rf ~/Pictures/earthview
 cd ~/.dotfiles/wallpapers && ./run.sh
 
-echo "configure manual steps"
+echo "configure manual steps in sync_down.sh"
+code ~/.dotfiles/sync_down.sh
 # in variety, set wallpaper directory to ~/Pictures/earthview
+# set the global scale to 118.75% in the display preferences
