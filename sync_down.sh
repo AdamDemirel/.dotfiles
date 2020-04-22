@@ -26,7 +26,7 @@ ln -s ~/.dotfiles/keybindings.json ~/.config/Code\ -\ OSS/User/keybindings.json
 ln -s ~/.dotfiles/mimeapps.list ~/.config/mimeapps.list
 
 echo "fixing packmans gpg keys error..."
-find /var/cache/pacman/pkg/ -iname "*.part" -exec rm {} \; 
+find /var/cache/pacman/pkg/ -iname "*.part" -exec rm {} \;
 sudo pacman-key --populate archlinux
 sudo pacman -S archlinux-keyring
 
@@ -88,7 +88,7 @@ pgcli bat postman insomnia mongodb mongodb-compass build-essentials calibre hub 
 fira-code
 
 echo "installing npm globals..."
-npm i -g gulp next eslint eslint-plugin-prettier netlify-cli webpack babel-cli surge
+npm i -g gulp create-next-app eslint eslint-plugin-prettier netlify-cli webpack babel-cli surge
 # react-static
 
 echo "installing and setting node..."
@@ -101,7 +101,9 @@ sudo pacman -R dolphin dolphin-plugins kde-servicemenus-rootactions \
 thunderbird
 
 echo "installing zsh theme..."
-mkdir -p $ZSH_CUSTOM/themes && curl https://raw.githubusercontent.com/jopcode/oh-my-zsh-bunnyruni-theme/master/bunnyruni.zsh-theme -L -o $ZSH_CUSTOM/themes/bunnyruni.zsh-theme
+mkdir -p $ZSH_CUSTOM/themes && curl \
+https://raw.githubusercontent.com/jopcode/oh-my-zsh-bunnyruni-theme/master/bunnyruni.zsh-theme \
+-L -o $ZSH_CUSTOM/themes/bunnyruni.zsh-theme
 
 echo "installing vscode extensions..."
 cat ~/.dotfiles/extensions.txt | xargs -n 1 code --install-extension

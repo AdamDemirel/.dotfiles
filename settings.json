@@ -36,7 +36,6 @@
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
   "editor.wordWrap": "on",
   "editor.maxTokenizationLineLength": 50000,
   "editor.cursorBlinking": "smooth",
