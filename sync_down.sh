@@ -4,7 +4,7 @@ echo "setting screen resolutions..."
 xrandr --output HDMI-1 --mode 2560x14 # Desktop
 xrandr --output eDP-1 --mode 1600x900 # Laptop
 
-echo "removing old dotfiles..."
+# echo "removing old dotfiles..."
 # rm -rf ~/.dotfiles
 
 echo "downloading new dotfiles..."
@@ -37,7 +37,7 @@ echo "upgrading arch..."
 sudo pacman -Syyu --noconfirm
 
 echo "installing all packman packages..."
-image_viewer=ristretto
+image_viewer=gwenview
 image_editor=mypaint
 terminal_emulator=konsole
 audio_editor=ffmpeg
