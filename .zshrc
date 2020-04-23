@@ -45,7 +45,7 @@ source $ZSH/oh-my-zsh.sh # Enables oh-my-zsh
 
 #--------------------------------------------------------------
 
-job_name=~/Code/Projects/prc27_apsa
+job_name=~/Code/prc27_apsa
 
 ## ALIASES
 alias job="xdg-open https://www.notion.so/ && $job_name && code . && cd design/ && st"
