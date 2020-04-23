@@ -27,6 +27,7 @@ mechatroner.rainbow-csv
 mgmcdermott.vscode-language-babel
 misogi.ruby-rubocop
 mjmcloug.vscode-elixir
+mkxml.vscode-filesize
 ms-vsliveshare.vsliveshare
 msjsdiag.debugger-for-chrome
 oderwat.indent-rainbow
