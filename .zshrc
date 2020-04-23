@@ -115,6 +115,7 @@ alias sync_down="cd ~/.dotfiles/ && ./sync_up.sh"
 alias cat="bat"
 alias yoghurt="yaourt"
 alias dotfiles="cd ~/.dotfiles"
+alias rimraf="rm -rf"
 
 function mkcd {
   if [ ! -n "$1" ]; then
