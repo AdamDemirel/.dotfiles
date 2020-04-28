@@ -38,10 +38,8 @@ pranaygp.vscode-css-peek
 rebornix.ruby
 rifi2k.format-html-in-php
 ritwickdey.LiveServer
-robinbentley.sass-indented
 rubbersheep.gi
 seeker-dk.node-modules-viewer
-shinnn.stylelint
 swyphcosmo.spellchecker
 techer.open-in-browser
 Tyriar.lorem-ipsum

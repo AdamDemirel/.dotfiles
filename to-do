@@ -1,16 +1,6 @@
-Before reinstall:
-- Install iso, burn with etcher or dd
-- Check the checksum of the iso https://wiki.manjaro.org/index.php?title=Burn_an_ISO_File
-
-----------------
-
 to do / automate:
-(and `aws configure` to setup, then `aws s3 ls` to see buckets)
-- automate git setup https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent Add ssh keys https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent and cat it for https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account
-- keybind terminal opening to f12 (xfce4-terminal/konsole)
 - keybind gnome-screenshot to printscreen
-- Minimise windows button to bottom right of taskbar
-- Taskbar: Start, chrome, thunar
+- Taskbar: Start, chrome, thunar, firefox, zoom
 - For slack, remove default start script and place the following with sudo chmod +x to it in /usr/local/bin and add back to autostart scripts: #!/bin/bash env LD_PRELOAD=/usr/lib/libcurl.so.3 /usr/bin/slack %U -u & ?
 - Sync up start menu (using menulibre?): Firefox, konversation, libreoffice writer, konsole, skype, kruler
 - Change power management settings
