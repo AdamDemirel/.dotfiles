@@ -82,7 +82,7 @@ teleconference=zoom
 bittorrent_client=transmission-gtk
 gif_recorder=kazam
 
-yaourt -S xflux-gui-git google-chrome xorg-xkill skypeforlinux-stable-bin $audio_listener \
+yaourt -S xflux xflux-gui-git google-chrome xorg-xkill skypeforlinux-stable-bin $audio_listener \
 $teleconference slack-desktop $bittorrent_client $gif_recorder \
 pgcli bat postman insomnia mongodb mongodb-compass calibre hub \
 otf-fira-code fondu heroku-cli
@@ -113,7 +113,7 @@ echo "logout and login to update papirus icons"
 # or `wget -qO- https://git.io/papirus-icon-theme-install | sh` from https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
 
 echo "setting flux up..."
-xflux -l -33.8688 -k 2000
+# xflux -l -33.8 -k 2000 # Latitude 33.8 Longitude 151.11, 2000kelvins
 
 echo "setting up wallpaper..."
 rm -rf ~/Pictures/earthview
