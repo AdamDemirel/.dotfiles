@@ -1,7 +1,6 @@
 abusaidm.html-snippets
 ajhyndman.jslint
 akamud.vscode-theme-onedark
-avocode.avocode
 bierner.markdown-preview-github-styles
 bmewburn.vscode-intelephense-client
 bungcip.better-toml
