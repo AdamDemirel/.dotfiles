@@ -14,7 +14,6 @@ dbaeumer.vscode-eslint
 ecmel.vscode-html-css
 esbenp.prettier-vscode
 felixfbecker.php-intellisense
-hnw.vscode-auto-open-markdown-preview
 HookyQR.beautify
 humao.rest-client
 jasonnutter.search-node-modules
