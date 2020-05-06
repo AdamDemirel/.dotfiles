@@ -52,7 +52,7 @@ $video_player $image_capture $video_capture gparted etcher \
 $pdf_viewer anki $skype_login_fix $skype_login_fix_gui \
 discord libreoffice $file_manager fzf tldr whois httpie aws-cli \
 ack tree git-lfs firefox kruler gvfs-smb zip flatpak \
-solaar docker docker-compose gnome-screenshot # pandoc
+solaar docker docker-compose gnome-screenshot dpkg # pandoc
 
 echo "setting zsh as default shell... logout and login for it to take effect"
 chsh -s $(which zsh)

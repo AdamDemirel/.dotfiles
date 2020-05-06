@@ -116,6 +116,7 @@ alias cat="bat"
 alias yoghurt="yaourt"
 alias dotfiles="cd ~/.dotfiles"
 alias rimraf="rm -rf"
+alias utime="sudo ntpdate -vu time.nist.gov"
 
 function mkcd {
   if [ ! -n "$1" ]; then
