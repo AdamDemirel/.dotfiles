@@ -59,7 +59,6 @@
   "css.lint.important": "warning",
   "css.lint.zeroUnits": "warning",
   "html.format.indentHandlebars": true,
-  "sync.gist": "8c005168cbe455eab25266956fe115dc",
   "turboConsoleLog.addSemicolonInTheEnd": true,
   "turboConsoleLog.logMessagePrefix": "CL",
   "turboConsoleLog.quote": "'",
@@ -71,7 +70,6 @@
   "editor.scrollBeyondLastLine": false,
   "liveServer.settings.donotVerifyTags": true,
   "eslint.run": "onSave",
-  // "eslint.autoFixOnSave": true,
   "[html]": {
     "editor.defaultFormatter": "HookyQR.beautify"
   },
@@ -82,16 +80,15 @@
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
+  "[md]": {
+    "editor.formatOnSave": false
+  },
   "[php]": {
     "editor.defaultFormatter": "junstyle.php-cs-fixer",
     "editor.formatOnSave": true
   },
-  "[md]": {
-    "editor.formatOnSave": false
-  },
   "php-cs-fixer.rules": "@PhpCsFixer",
   "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-  "editor.formatOnSaveTimeout": 5000,
   "php-cs-fixer.lastDownload": 1588811240120,
   "editor.formatOnSave": true
 }
