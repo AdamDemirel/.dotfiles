@@ -9,14 +9,16 @@ ChakrounAnas.turbo-console-log
 chenxsan.vscode-standardjs
 D1n910.fast-open-html-in-browser
 dbaeumer.vscode-eslint
+eamodio.gitlens
 ecmel.vscode-html-css
 esbenp.prettier-vscode
-felixfbecker.php-intellisense
+felixfbecker.php-debug
 HookyQR.beautify
 humao.rest-client
 jasonnutter.search-node-modules
 jock.svg
 jpoissonnier.vscode-styled-components
+junstyle.php-cs-fixer
 karunamurti.haml
 kumar-harsh.graphql-for-vscode
 leizongmin.node-module-intellisense
@@ -37,6 +39,7 @@ rifi2k.format-html-in-php
 ritwickdey.LiveServer
 rubbersheep.gi
 seeker-dk.node-modules-viewer
+SirTori.indenticator
 swyphcosmo.spellchecker
 techer.open-in-browser
 Tyriar.lorem-ipsum

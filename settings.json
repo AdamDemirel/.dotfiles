@@ -27,7 +27,7 @@
   },
   // editor settings
   "editor.tabSize": 2,
-  "editor.fontSize": 14,
+  "editor.fontSize": 16,
   "editor.renderWhitespace": "boundary",
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.accessibilitySupport": "off",
@@ -50,7 +50,8 @@
   // language settings
   // plugin settings
   "emmet.includeLanguages": {
-    "html": "css"
+    "html": "css",
+    "twig": "html"
   },
   "terminal.integrated.fontSize": 12,
   "css.lint.duplicateProperties": "warning",
@@ -70,7 +71,7 @@
   "editor.scrollBeyondLastLine": false,
   "liveServer.settings.donotVerifyTags": true,
   "eslint.run": "onSave",
-  "eslint.autoFixOnSave": true,
+  // "eslint.autoFixOnSave": true,
   "[html]": {
     "editor.defaultFormatter": "HookyQR.beautify"
   },
@@ -80,5 +81,17 @@
   "liveServer.settings.donotShowInfoMsg": true,
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
-  }
+  },
+  "[php]": {
+    "editor.defaultFormatter": "junstyle.php-cs-fixer",
+    "editor.formatOnSave": true
+  },
+  "[md]": {
+    "editor.formatOnSave": false
+  },
+  "php-cs-fixer.rules": "@PhpCsFixer",
+  "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+  "editor.formatOnSaveTimeout": 5000,
+  "php-cs-fixer.lastDownload": 1588811240120,
+  "editor.formatOnSave": true
 }
