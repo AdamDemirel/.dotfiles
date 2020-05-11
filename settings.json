@@ -89,6 +89,5 @@
   },
   "php-cs-fixer.rules": "@PhpCsFixer",
   "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-  "php-cs-fixer.lastDownload": 1588811240120,
-  "editor.formatOnSave": true
+  "php-cs-fixer.lastDownload": 1588811240120
 }

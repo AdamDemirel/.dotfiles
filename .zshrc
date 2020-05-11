@@ -4,6 +4,11 @@ export PATH=$HOME/bin:/usr/local/bin/:/home/adam/Code/emsdk:/home/adam/Code/emsd
 
 if [ -f '/home/adam/.netlify/helper/path.zsh.inc' ]; then source '/home/adam/.netlify/helper/path.zsh.inc'; fi # Adds Netlify's Git Credential Helper to PATH
 
+# deno
+export DENO_INSTALL="/home/adam/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+
+
 #--------------------------------------------------------------
 
 # ZSH theme (https://github.com/robbyrussell/oh-my-zsh/wiki/Themes)
@@ -101,6 +106,7 @@ alias build="npm run build"
 alias serve="npm run serve"
 alias portfolio="cd /home/adam/Code/myportfolio/content/"
 alias gp="git add . && git commit -m 'random change' && git push"
+alias gpp="cd /home/adam/Documents/ && gp"
 alias calc="node -p"
 alias dockerclean="docker volume prune && docker rm $(docker ps -a -q) -f"
 #alias wp="docker-compose exec wordpress php -d memory_limit=512M /usr/local/bin/wp --allow-root" 
@@ -116,7 +122,6 @@ alias cat="bat"
 alias yoghurt="yaourt"
 alias dotfiles="cd ~/.dotfiles"
 alias rimraf="rm -rf"
-alias utime="sudo ntpdate -vu time.nist.gov"
 
 function mkcd {
   if [ ! -n "$1" ]; then

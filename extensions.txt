@@ -7,6 +7,7 @@ bungcip.better-toml
 castwide.solargraph
 ChakrounAnas.turbo-console-log
 chenxsan.vscode-standardjs
+cjhowe7.laravel-blade
 D1n910.fast-open-html-in-browser
 dbaeumer.vscode-eslint
 eamodio.gitlens
