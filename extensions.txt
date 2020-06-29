@@ -41,6 +41,7 @@ ritwickdey.LiveServer
 rubbersheep.gi
 seeker-dk.node-modules-viewer
 SirTori.indenticator
+stylelint.vscode-stylelint
 swyphcosmo.spellchecker
 techer.open-in-browser
 Tyriar.lorem-ipsum

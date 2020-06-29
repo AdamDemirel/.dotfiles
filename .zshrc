@@ -50,7 +50,7 @@ source $ZSH/oh-my-zsh.sh # Enables oh-my-zsh
 
 #--------------------------------------------------------------
 
-job_name=/home/adam/Code/ozh_shop/app/bedrock
+job_name=/home/adam/Code/uts004_quiz/
 
 ## ALIASES
 alias job="xdg-open https://www.notion.so/ && $job_name && code . && cd design/ && st"
@@ -122,6 +122,7 @@ alias cat="bat"
 alias yoghurt="yaourt"
 alias dotfiles="cd ~/.dotfiles"
 alias rimraf="rm -rf"
+alias strictnode="node --use_strict"
 
 function mkcd {
   if [ ! -n "$1" ]; then

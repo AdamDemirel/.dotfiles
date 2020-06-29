@@ -35,7 +35,6 @@
   "editor.minimap.enabled": false,
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
-  "editor.formatOnPaste": true,
   "editor.wordWrap": "on",
   "editor.maxTokenizationLineLength": 50000,
   "editor.cursorBlinking": "smooth",
@@ -70,11 +69,12 @@
   "editor.scrollBeyondLastLine": false,
   "liveServer.settings.donotVerifyTags": true,
   "eslint.run": "onSave",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[html]": {
     "editor.defaultFormatter": "HookyQR.beautify"
-  },
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
   },
   "liveServer.settings.donotShowInfoMsg": true,
   "[json]": {
@@ -84,10 +84,18 @@
     "editor.formatOnSave": false
   },
   "[php]": {
-    "editor.defaultFormatter": "junstyle.php-cs-fixer",
-    "editor.formatOnSave": true
+    "editor.defaultFormatter": "junstyle.php-cs-fixer"
   },
   "php-cs-fixer.rules": "@PhpCsFixer",
   "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-  "php-cs-fixer.lastDownload": 1588811240120
+  "php-cs-fixer.lastDownload": 1590634697947,
+  // stylelint
+  "stylelint.enable": true,
+  "css.validate": false,
+  "scss.validate": false,
+  // prettier
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }
