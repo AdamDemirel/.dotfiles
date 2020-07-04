@@ -50,7 +50,7 @@ source $ZSH/oh-my-zsh.sh # Enables oh-my-zsh
 
 #--------------------------------------------------------------
 
-job_name=/home/adam/Code/uts004_quiz/
+job_name=/home/adam/Code/quizz/uts004_quiz
 
 ## ALIASES
 alias job="xdg-open https://www.notion.so/ && $job_name && code . && cd design/ && st"

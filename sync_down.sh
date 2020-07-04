@@ -127,6 +127,7 @@ rm ~/.yaourtrc
 rm ~/.config/Code\ -\ OSS/User/settings.json
 rm ~/.config/Code\ -\ OSS/User/keybindings.json
 rm ~/.config/mimeapps.list
+rm ~/.config/Code\ -\ OSS/User/snippets/javascript.json
 
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
@@ -134,6 +135,7 @@ ln -s ~/.dotfiles/.yaourtrc ~/.yaourtrc
 ln -s ~/.dotfiles/settings.json ~/.config/Code\ -\ OSS/User/settings.json
 ln -s ~/.dotfiles/keybindings.json ~/.config/Code\ -\ OSS/User/keybindings.json
 ln -s ~/.dotfiles/mimeapps.list ~/.config/mimeapps.list
+ln -s ~/.dotfiles/snippets/javascript.json ~/.config/Code\ -\ OSS/User/snippets/javascript.json
 
 
 echo "configure manual steps in sync_down.sh"

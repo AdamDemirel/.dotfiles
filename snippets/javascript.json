@@ -1,0 +1,19 @@
+{
+	// $0 final cursor position
+	// $1 $2 $3 cursor tab order
+	// ${1: label} to for prebuilt string with cursor
+
+	"Styled Components": {
+		"prefix": "sc",
+		"body": "import styled from 'styled-components';",
+		"description": "My SC expander"
+	},
+	"Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1', $2);",
+			"$0",
+		],
+		"description": "My custom logger"
+	}
+}
