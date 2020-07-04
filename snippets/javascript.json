@@ -1,7 +1,7 @@
 {
   // $0 final cursor position
   // $1 $2 $3 cursor tab order
-  // ${1: label} to for prebuilt string with cursor
+  // ${1: label} for prebuilt string with cursor
 
   "Import Styled Components": {
     "prefix": "sc",
@@ -25,11 +25,11 @@
     "prefix": "comp",
     "body": [
       "export default function $1() {",
-        "\t$0",
+        "  $0",
         "",
-        "\treturn (",
-          "\t\t$2",
-        "\t);",
+        "  return (",
+          "    $2",
+        "  );",
       "}"
     ],
     "description": ":Boilerplate Functional Component"
