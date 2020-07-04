@@ -3,10 +3,15 @@
 	// $1 $2 $3 cursor tab order
 	// ${1: label} to for prebuilt string with cursor
 
-	"Styled Components": {
+	"Import Styled Components": {
 		"prefix": "sc",
 		"body": "import styled from 'styled-components';",
-		"description": "My SC expander"
+		"description": ":Import Styled Comps"
+	},
+	"Import React": {
+		"prefix": "react",
+		"body": "import React from 'react';",
+		"description": ":Import React"
 	},
 	"Print to console": {
 		"prefix": "log",
@@ -14,6 +19,19 @@
 			"console.log('$1', $2);",
 			"$0",
 		],
-		"description": "My custom logger"
-	}
+		"description": ":Logger"
+	},
+	"Boilerplate Functional Component": {
+		"prefix": "comp",
+		"body": [
+			"export default function $1() {",
+				"\t$0",
+				"",
+				"\treturn (",
+					"\t\t$2",
+				"\t);",
+			"}"
+		],
+		"description": ":Boilerplate Functional Component"
+	},
 }
