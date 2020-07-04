@@ -1,37 +1,37 @@
 {
-	// $0 final cursor position
-	// $1 $2 $3 cursor tab order
-	// ${1: label} to for prebuilt string with cursor
+  // $0 final cursor position
+  // $1 $2 $3 cursor tab order
+  // ${1: label} to for prebuilt string with cursor
 
-	"Import Styled Components": {
-		"prefix": "sc",
-		"body": "import styled from 'styled-components';",
-		"description": ":Import Styled Comps"
-	},
-	"Import React": {
-		"prefix": "react",
-		"body": "import React from 'react';",
-		"description": ":Import React"
-	},
-	"Print to console": {
-		"prefix": "log",
-		"body": [
-			"console.log('$1', $2);",
-			"$0",
-		],
-		"description": ":Logger"
-	},
-	"Boilerplate Functional Component": {
-		"prefix": "comp",
-		"body": [
-			"export default function $1() {",
-				"\t$0",
-				"",
-				"\treturn (",
-					"\t\t$2",
-				"\t);",
-			"}"
-		],
-		"description": ":Boilerplate Functional Component"
-	},
+  "Import Styled Components": {
+    "prefix": "sc",
+    "body": "import styled from 'styled-components';",
+    "description": ":Import Styled Comps"
+  },
+  "Import React": {
+    "prefix": "react",
+    "body": "import React from 'react';",
+    "description": ":Import React"
+  },
+  "Print to console": {
+    "prefix": "log",
+    "body": [
+      "console.log('$1', $2);",
+      "$0",
+    ],
+    "description": ":Logger"
+  },
+  "Boilerplate Functional Component": {
+    "prefix": "comp",
+    "body": [
+      "export default function $1() {",
+        "\t$0",
+        "",
+        "\treturn (",
+          "\t\t$2",
+        "\t);",
+      "}"
+    ],
+    "description": ":Boilerplate Functional Component"
+  },
 }
