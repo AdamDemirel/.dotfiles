@@ -50,7 +50,7 @@ source $ZSH/oh-my-zsh.sh # Enables oh-my-zsh
 
 #--------------------------------------------------------------
 
-job_name=/home/adam/Code/tno002-biosphere
+job_name=/home/adam/Code/ozh003_website/frontend
 
 ## ALIASES
 alias job="xdg-open https://www.notion.so/ && $job_name && code . && cd design/ && st"
@@ -159,3 +159,9 @@ add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
 #--------------------------------------------------------------
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/adam/google-cloud-sdk/path.zsh.inc' ]; then . '/home/adam/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/adam/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/adam/google-cloud-sdk/completion.zsh.inc'; fi

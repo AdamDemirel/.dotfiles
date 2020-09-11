@@ -14,5 +14,15 @@
   {
     "key": "ctrl+alt+l",
     "command": "-turboConsoleLog.displayLogMessage"
+  },
+  {
+    "key": "ctrl+meta+l",
+    "command": "expandLineSelection",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "-expandLineSelection",
+    "when": "textInputFocus"
   }
 ]

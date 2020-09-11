@@ -12,7 +12,6 @@ D1n910.fast-open-html-in-browser
 dbaeumer.vscode-eslint
 eamodio.gitlens
 ecmel.vscode-html-css
-esbenp.prettier-vscode
 felixfbecker.php-debug
 HookyQR.beautify
 humao.rest-client
@@ -38,6 +37,7 @@ pranaygp.vscode-css-peek
 rebornix.ruby
 rifi2k.format-html-in-php
 ritwickdey.LiveServer
+ronnidc.nunjucks
 rubbersheep.gi
 seeker-dk.node-modules-viewer
 SirTori.indenticator

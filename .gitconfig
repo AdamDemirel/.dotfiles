@@ -34,10 +34,5 @@
   path = /home/adam/.netlify/helper/git-config
 [include]
   path = /home/adam/.netlify/helper/git-config
-[filter "lfs"]
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
 [credential]
 	helper = cache --timeout=9999999999
