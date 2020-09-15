@@ -72,6 +72,13 @@
   "[html]": {
     "editor.defaultFormatter": "HookyQR.beautify"
   },
+  "files.associations": {
+    "*.njk": "twig"
+  },
+  "[twig]": {
+    "editor.defaultFormatter": "mblode.twig-language-2",
+    "editor.formatOnSave": true
+  },
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,

@@ -12,6 +12,7 @@ D1n910.fast-open-html-in-browser
 dbaeumer.vscode-eslint
 eamodio.gitlens
 ecmel.vscode-html-css
+eseom.nunjucks-template
 felixfbecker.php-debug
 HookyQR.beautify
 humao.rest-client
@@ -22,6 +23,7 @@ junstyle.php-cs-fixer
 karunamurti.haml
 kumar-harsh.graphql-for-vscode
 leizongmin.node-module-intellisense
+mblode.twig-language-2
 mechatroner.rainbow-csv
 mgmcdermott.vscode-language-babel
 misogi.ruby-rubocop
