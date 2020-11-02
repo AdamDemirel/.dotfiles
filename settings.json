@@ -1,7 +1,7 @@
 {
   // window settings
   "window.title": "${activeEditorMedium}${separator}${rootName}",
-  "window.zoomLevel": 3,
+  "window.zoomLevel": 2,
   // theme
   "workbench.colorTheme": "Atom One Dark",
   "workbench.colorCustomizations": {
@@ -76,13 +76,13 @@
     "*.njk": "twig"
   },
   "[twig]": {
+    "editor.formatOnSave": true,
     "editor.defaultFormatter": "mblode.twig-language-2",
-    "editor.formatOnSave": true
   },
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
   "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-  "php-cs-fixer.lastDownload": 1599110554092
+  "php-cs-fixer.lastDownload": 1603666015083
   // other
 }

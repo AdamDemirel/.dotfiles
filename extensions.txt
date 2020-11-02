@@ -42,6 +42,7 @@ ritwickdey.LiveServer
 ronnidc.nunjucks
 rubbersheep.gi
 seeker-dk.node-modules-viewer
+SimonSiefke.prettier-vscode
 SirTori.indenticator
 stylelint.vscode-stylelint
 swyphcosmo.spellchecker

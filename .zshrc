@@ -123,6 +123,7 @@ alias yoghurt="yaourt"
 alias dotfiles="cd ~/.dotfiles"
 alias rimraf="rm -rf"
 alias strictnode="node --use_strict"
+alias startssh="eval `ssh-agent` && ssh-add ~/.ssh/id_rsa && sh-add -L"
 
 function mkcd {
   if [ ! -n "$1" ]; then
