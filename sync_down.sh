@@ -140,6 +140,7 @@ ln -s ~/.dotfiles/snippets/javascript.json ~/.config/Code\ -\ OSS/User/snippets/
 
 echo "configure manual steps in sync_down.sh"
 code ~/.dotfiles/sync_down.sh
+# Run these docker steps https://docs.docker.com/engine/install/linux-postinstall/
 # in variety, set wallpaper directory to ~/Pictures/earthview
 # set the global scale to 118.75% in the display preferences
 # Change default shell in konsole to /bin/zsh
