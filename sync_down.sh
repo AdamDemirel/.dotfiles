@@ -161,7 +161,7 @@ sudo systemctl start docker
 
 echo "Generating SSH key and adding to GitHub..."
 echo 'y' | ssh-keygen -f $HOME/.ssh/id_rsa -t rsa -N '' -C "adxm@msn.com"
-GITHUB_SSH_KEY=$( echo ~/.ssh/id_rsa.pub )
+GITHUB_SSH_KEY=$( cat ~/.ssh/id_rsa.pub )
 curl -u "AdamDemirel" --data "{\"title\":\"manjaro\",\"key\": \"$GITHUB_SSH_KEY\" }" https://api.github.com/user/keys
 
 echo "installing filesystem..."
