@@ -140,6 +140,7 @@ ln -s ~/.dotfiles/snippets/javascript.json ~/.config/Code\ -\ OSS/User/snippets/
 
 echo "configure manual steps in sync_down.sh"
 code ~/.dotfiles/sync_down.sh
+# Run these docker steps https://docs.docker.com/engine/install/linux-postinstall/
 # in variety, set wallpaper directory to ~/Pictures/earthview
 # set the global scale to 118.75% in the display preferences
 # Change default shell in konsole to /bin/zsh
@@ -160,7 +161,7 @@ sudo systemctl start docker
 
 echo "Generating SSH key and adding to GitHub..."
 echo 'y' | ssh-keygen -f $HOME/.ssh/id_rsa -t rsa -N '' -C "adxm@msn.com"
-GITHUB_SSH_KEY=$( echo ~/.ssh/id_rsa.pub )
+GITHUB_SSH_KEY=$( cat ~/.ssh/id_rsa.pub )
 curl -u "AdamDemirel" --data "{\"title\":\"manjaro\",\"key\": \"$GITHUB_SSH_KEY\" }" https://api.github.com/user/keys
 
 echo "installing filesystem..."
