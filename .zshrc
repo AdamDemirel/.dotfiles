@@ -9,8 +9,8 @@ export DENO_INSTALL="/home/adam/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
 # Start ssh
-eval `ssh-agent` > /dev/null
-ssh-add ~/.ssh/id_rsa > /dev/null 2>&1
+eval `ssh-agent` &> /dev/null
+ssh-add ~/.ssh/id_rsa &> /dev/null
 
 #--------------------------------------------------------------
 
