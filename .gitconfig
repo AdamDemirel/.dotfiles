@@ -36,3 +36,5 @@
   path = /home/adam/.netlify/helper/git-config
 [credential]
 	helper = cache --timeout=9999999999
+[include]
+  path = /home/adam/.netlify/helper/git-config

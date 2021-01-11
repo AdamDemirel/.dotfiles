@@ -79,6 +79,10 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "mblode.twig-language-2",
   },
+  "[php]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,

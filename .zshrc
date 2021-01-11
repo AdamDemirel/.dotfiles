@@ -63,7 +63,7 @@ alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias np='nano -w PKGBUILD'
 alias more=less
-alias inotify="sudo echo fs.inotify.max_user_watches=524288 | sudo tee /etc/sysctl.d/40-max-user-watches.conf && sudo sysctl --system"
+alias inotify="echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p"
 alias weather="curl wttr.in/sydney"
 alias agent="~/.datadog-agent/bin/agent"
 alias zshrc="kate ~/.zshrc"
@@ -112,7 +112,7 @@ alias gp="git add . && git commit -m 'random change' && git push"
 alias gpp="cd /home/adam/Documents/ && gp"
 alias calc="node -p"
 alias dockerclean="docker volume prune && docker rm $(docker ps -a -q) -f"
-#alias wp="docker-compose exec wordpress php -d memory_limit=512M /usr/local/bin/wp --allow-root" 
+#alias wp="docker-compose exec wordpress php -d memory_limit=512M /usr/local/bin/wp --allow-root"
 alias wpexport="wp export --stdout --skip_comments > config/dev-content.xml\n"
 alias dc="docker-compose"
 alias glog="git log --oneline"
@@ -170,3 +170,6 @@ if [ -f '/home/adam/google-cloud-sdk/path.zsh.inc' ]; then . '/home/adam/google-
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/adam/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/adam/google-cloud-sdk/completion.zsh.inc'; fi
+
+# The next line updates PATH for Netlify's Git Credential Helper.
+if [ -f '/home/adam/.netlify/helper/path.zsh.inc' ]; then source '/home/adam/.netlify/helper/path.zsh.inc'; fi

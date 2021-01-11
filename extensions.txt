@@ -4,6 +4,7 @@ bierner.markdown-preview-github-styles
 bmewburn.vscode-intelephense-client
 bungcip.better-toml
 castwide.solargraph
+ChakrounAnas.turbo-console-log
 dbaeumer.vscode-eslint
 eamodio.gitlens
 ecmel.vscode-html-css
@@ -12,7 +13,6 @@ HookyQR.beautify
 humao.rest-client
 jock.svg
 jpoissonnier.vscode-styled-components
-junstyle.php-cs-fixer
 karunamurti.haml
 mblode.twig-language-2
 mechatroner.rainbow-csv
