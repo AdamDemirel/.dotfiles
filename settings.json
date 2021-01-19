@@ -86,7 +86,5 @@
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
-  "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-  "php-cs-fixer.lastDownload": 1603666015083
   // other
 }
