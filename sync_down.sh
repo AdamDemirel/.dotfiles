@@ -47,7 +47,7 @@ file_manager=thunar
 
 sudo pacman -S --noconfirm zsh $terminal_emulator git $image_viewer \
 $image_editor gimp steam $audio_editor $shell $shell_text_editor \
-$gui_text_editor $code_editor htop ksysguard $wallpaper_changer \
+$gui_text_editor $code_editor ksysguard $wallpaper_changer \
 $video_player $image_capture $video_capture gparted etcher \
 $pdf_viewer anki $skype_login_fix $skype_login_fix_gui \
 discord libreoffice $file_manager fzf tldr whois httpie aws-cli \
@@ -81,11 +81,12 @@ audio_listener=banshee
 teleconference=zoom
 bittorrent_client=transmission-gtk
 gif_recorder=kazam
+process_viewer=gotop
 
 yaourt -S xflux xflux-gui-git google-chrome xorg-xkill skypeforlinux-stable-bin $audio_listener \
 $teleconference slack-desktop $bittorrent_client $gif_recorder \
 pgcli bat postman insomnia mongodb mongodb-compass calibre hub \
-otf-fira-code fondu heroku-cli
+otf-fira-code fondu heroku-cli $process_viewer
 
 echo "installing and setting node..."
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
