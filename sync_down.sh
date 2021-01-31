@@ -77,16 +77,17 @@ makepkg -si --noconfirm
 sudo rm -rf package-query yaourt
 
 echo "installing all yoghurt packages..."
-audio_listener=banshee
-teleconference=zoom
+# audio_listener=banshee
+# teleconference=zoom
 bittorrent_client=transmission-gtk
 gif_recorder=kazam
 process_viewer=gotop
 
-yaourt -S xflux xflux-gui-git google-chrome xorg-xkill skypeforlinux-stable-bin $audio_listener \
-$teleconference slack-desktop $bittorrent_client $gif_recorder \
-pgcli bat postman insomnia mongodb mongodb-compass calibre hub \
-otf-fira-code fondu heroku-cli $process_viewer
+yaourt -S xflux-gui-git google-chrome skypeforlinux-stable-bin \
+ slack-desktop $bittorrent_client $gif_recorder \
+bat insomnia hub \ ttf-fira-code $process_viewer 
+# xorg-xkill pgcli postman mongodb mongodb-compass calibre fondu heroku-cli
+#  $audio_listener $teleconference
 
 echo "installing and setting node..."
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
@@ -166,7 +167,7 @@ GITHUB_SSH_KEY=$( cat ~/.ssh/id_rsa.pub )
 curl -u "AdamDemirel" --data "{\"title\":\"manjaro\",\"key\": \"$GITHUB_SSH_KEY\" }" https://api.github.com/user/keys
 
 echo "installing filesystem..."
-cd ~/Document
+cd ~/Documents
 git clone git@github.com:AdamDemirel/fs.git .
 
 # https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
