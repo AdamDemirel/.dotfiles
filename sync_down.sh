@@ -13,6 +13,11 @@ xrandr --output eDP1 --mode 2460x1440 # Laptop
 # echo "removing old dotfiles..."
 # rm -rf ~/.dotfiles
 
+echo "installing nvidia prime drivers..."
+sudo mhwd -a pci nonfree 0300
+# https://forum.manjaro.org/t/no-hybrid-amdgpu-nvidia-drivers-in-mhwd-after-upgrade/46222/9
+# https://wiki.archlinux.org/index.php/PRIME
+
 echo "downloading new dotfiles..."
 cd ~ && git clone git@github.com:AdamDemirel/.dotfiles.git
 
