@@ -17,9 +17,11 @@ echo "downloading new dotfiles..."
 cd ~ && git clone git@github.com:AdamDemirel/.dotfiles.git
 
 echo "fixing packmans gpg keys error..."
-find /var/cache/pacman/pkg/ -iname "*.part" -exec rm {} \;
-sudo pacman-key --populate archlinux
-sudo pacman -S archlinux-keyring --noconfirm
+# find /var/cache/pacman/pkg/ -iname "*.part" -exec rm {} \;
+# sudo pacman-key --populate archlinux
+# sudo pacman -S archlinux-keyring --noconfirm
+sudo pacman-mirrors --country all --api --protocols all --set-branch stable && sudo pacman -Syyu
+# `sudo pacman-mirrors` to view, or `cat /etc/pacman.d/mirrorlist`
 
 echo "updating time..."
 sudo ntpdate -vu time.nist.gov
