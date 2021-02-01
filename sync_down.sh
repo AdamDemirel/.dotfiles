@@ -90,11 +90,11 @@ bittorrent_client=transmission-gtk
 gif_recorder=kazam
 process_viewer=gotop
 
-yaourt -S xflux-gui-git google-chrome skypeforlinux-stable-bin \
+yaourt -S google-chrome skypeforlinux-stable-bin \
  slack-desktop $bittorrent_client $gif_recorder \
 bat insomnia hub \ ttf-fira-code $process_viewer 
 # xorg-xkill pgcli postman mongodb mongodb-compass calibre fondu heroku-cli
-#  $audio_listener $teleconference
+#  $audio_listener $teleconference xflux-gui-git 
 
 echo "installing and setting node..."
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
@@ -163,6 +163,7 @@ code ~/.dotfiles/sync_down.sh
 # Start -> Global theme -> Breath2
 # Minimise windows button to bottom right of taskbar
 # `$ aws configure` to setup, then `aws s3 ls` to see buckets
+# Start -> System settings -> display and monitor -> night color -> activate, and set to 2000k, 'sunset to sunrise at curr location'
 
 echo "enable docker..."
 sudo systemctl enable docker
