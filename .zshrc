@@ -128,6 +128,10 @@ alias rimraf="rm -rf"
 alias strictnode="node --use_strict"
 alias kernel="mhwd-kernel -li"
 alias userlist="cat /etc/passwd"
+alias python="/usr/bin/python2.7"
+
+#--------------------------------------------------------------
+# functions
 
 function mkcd {
   if [ ! -n "$1" ]; then
@@ -139,6 +143,14 @@ function mkcd {
   fi
 }
 
+function getssl {
+  if [ ! -n "$1" ]; then
+    echo "Enter a domain name, eg https://cms.test.com"
+  else
+    curl --insecure -vvI $1 2>&1 | awk 'BEGIN { cert=0 } /^\* SSL connection/ { cert=1 } /^\*/ { if (cert) print }'
+  fi
+}
+  
 #--------------------------------------------------------------
 
 # Automatically calls `nvm use` in a directory with .nvmrc
