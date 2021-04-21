@@ -5,7 +5,7 @@
 	name = Adam Demirel
 [core]
 	autocrlf = false
-	safecrlf = true
+	safecrlf = false
 	editor = code
 	filemode = false
 	repositoryformatversion = 0
@@ -38,3 +38,5 @@
 	helper = cache --timeout=9999999999
 [include]
   path = /home/adam/.netlify/helper/git-config
+[init]
+	defaultBranch = master

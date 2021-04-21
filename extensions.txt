@@ -5,7 +5,9 @@ bmewburn.vscode-intelephense-client
 castwide.solargraph
 ChakrounAnas.turbo-console-log
 dbaeumer.vscode-eslint
+Divlo.vscode-styled-jsx-languageserver
 ecmel.vscode-html-css
+EditorConfig.EditorConfig
 felixfbecker.php-debug
 HookyQR.beautify
 humao.rest-client
@@ -20,6 +22,7 @@ oderwat.indent-rainbow
 pdconsec.vscode-print
 rifi2k.format-html-in-php
 ritwickdey.LiveServer
+sanity-io.vscode-sanity
 SirTori.indenticator
 stylelint.vscode-stylelint
 vscodevim.vim

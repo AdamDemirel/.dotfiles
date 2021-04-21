@@ -1,7 +1,6 @@
 {
   // window settings
   "window.title": "${activeEditorMedium}${separator}${rootName}",
-  "window.zoomLevel": 2,
   // theme
   "workbench.colorTheme": "Atom One Dark",
   "workbench.colorCustomizations": {
@@ -57,8 +56,11 @@
   },
   "terminal.integrated.fontSize": 12,
   "turboConsoleLog.addSemicolonInTheEnd": true,
-  "turboConsoleLog.logMessagePrefix": "CL",
+  "turboConsoleLog.logMessagePrefix": "",
   "turboConsoleLog.quote": "'",
+  "turboConsoleLog.insertEnclosingClass": false,
+  "turboConsoleLog.insertEnclosingFunction": false,
+  "turboConsoleLog.includeFileNameAndLineNum": false,
   "liveServer.settings.donotVerifyTags": true,
   "liveServer.settings.donotShowInfoMsg": true,
   // linters/formatters
@@ -86,5 +88,6 @@
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
+  "window.zoomLevel": 1,
   // other
 }
