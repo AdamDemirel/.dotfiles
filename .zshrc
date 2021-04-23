@@ -129,6 +129,7 @@ alias strictnode="node --use_strict"
 alias kernel="mhwd-kernel -li"
 alias userlist="cat /etc/passwd"
 alias python="/usr/bin/python2.7"
+alias getpublicip="curl http://checkip.amazonaws.com/"
 
 #--------------------------------------------------------------
 # functions
