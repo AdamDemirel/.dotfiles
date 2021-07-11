@@ -121,7 +121,7 @@ alias t="touch"
 alias path="which"
 alias sync_up="cd ~/.dotfiles/ && ./sync_up.sh"
 alias sync_down="cd ~/.dotfiles/ && ./sync_down.sh"
-alias cat="bat"
+# alias cat="bat"
 alias yoghurt="yaourt"
 alias dotfiles="cd ~/.dotfiles"
 alias rimraf="rm -rf"
@@ -186,3 +186,8 @@ if [ -f '/home/adam/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/adam/g
 
 # The next line updates PATH for Netlify's Git Credential Helper.
 if [ -f '/home/adam/.netlify/helper/path.zsh.inc' ]; then source '/home/adam/.netlify/helper/path.zsh.inc'; fi
+
+# The next line updates PATH for Netlify's Git Credential Helper.
+test -f '/home/adam/.config/netlify/helper/path.zsh.inc' && source '/home/adam/.config/netlify/helper/path.zsh.inc'
+
+eval "$(starship init zsh)"

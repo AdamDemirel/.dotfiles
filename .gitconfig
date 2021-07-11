@@ -36,7 +36,17 @@
   path = /home/adam/.netlify/helper/git-config
 [credential]
 	helper = cache --timeout=9999999999
+	helper = netlify
 [include]
   path = /home/adam/.netlify/helper/git-config
 [init]
 	defaultBranch = master
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+
+# This next lines include Netlify's Git Credential Helper configuration in your Git configuration.
+[include]
+  path = /home/adam/.config/netlify/helper/git-config
