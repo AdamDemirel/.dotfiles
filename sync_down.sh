@@ -164,7 +164,7 @@ code ~/.dotfiles/sync_down.sh
 # Minimise windows button to bottom right of taskbar
 # `$ aws configure` to setup, then `aws s3 ls` to see buckets
 # Start -> System settings -> display and monitor -> night color -> activate, and set to 2000k, 'sunset to sunrise at curr location'
-# Thunar -> edit -> configure custom actions -> set 'Open terminal here' comand from exo open (which is for xfce) to `xdg-open .`
+# Thunar -> edit -> configure custom actions -> set 'Open terminal here' comand from exo open (which is for xfce) to `konsole --noclose --workdir . -e 'bash -c "exec /usr/bin/zsh"'` (see https://askubuntu.com/questions/1210190/one-click-open-terminal-run-commands-keep-using-the-terminal)
 
 echo "enable docker..."
 sudo systemctl enable docker
