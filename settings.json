@@ -89,6 +89,6 @@
   "less.validate": false,
   "scss.validate": false,
   "explorer.confirmDelete": false,
-  "window.zoomLevel": 4,
+  "window.zoomLevel": 3,
   // other
 }

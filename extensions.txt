@@ -10,6 +10,7 @@ eamodio.gitlens
 ecmel.vscode-html-css
 EditorConfig.EditorConfig
 felixfbecker.php-debug
+Gruntfuggly.todo-tree
 HookyQR.beautify
 humao.rest-client
 jock.svg
@@ -25,8 +26,11 @@ rifi2k.format-html-in-php
 ritwickdey.LiveServer
 sanity-io.vscode-sanity
 SirTori.indenticator
+softwaredotcom.swdc-vscode
 stylelint.vscode-stylelint
 usernamehw.errorlens
 vscodevim.vim
+wix.vscode-import-cost
+wmaurer.vscode-jumpy
 xabikos.JavaScriptSnippets
 yzhang.markdown-all-in-one
