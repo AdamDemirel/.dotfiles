@@ -26,6 +26,7 @@ ritwickdey.LiveServer
 sanity-io.vscode-sanity
 SirTori.indenticator
 stylelint.vscode-stylelint
+usernamehw.errorlens
 vscodevim.vim
 xabikos.JavaScriptSnippets
 yzhang.markdown-all-in-one
