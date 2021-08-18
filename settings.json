@@ -89,6 +89,17 @@
   "less.validate": false,
   "scss.validate": false,
   "explorer.confirmDelete": false,
-  "window.zoomLevel": 3,
+  "window.zoomLevel": 2,
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]"
+  ],
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  "workbench.editor.untitled.hint": "hidden",
   // other
 }

@@ -190,4 +190,4 @@ if [ -f '/home/adam/.netlify/helper/path.zsh.inc' ]; then source '/home/adam/.ne
 # The next line updates PATH for Netlify's Git Credential Helper.
 test -f '/home/adam/.config/netlify/helper/path.zsh.inc' && source '/home/adam/.config/netlify/helper/path.zsh.inc'
 
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
