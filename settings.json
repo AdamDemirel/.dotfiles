@@ -101,5 +101,8 @@
   ],
   "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
   "workbench.editor.untitled.hint": "hidden",
+  "liquid.format": true,
+  // https://basarat.gitbook.io/typescript/getting-started
+  "typescript.tsdk": "./node_modules/typescript/lib"
   // other
 }

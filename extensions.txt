@@ -4,6 +4,7 @@ bierner.markdown-preview-github-styles
 bmewburn.vscode-intelephense-client
 castwide.solargraph
 ChakrounAnas.turbo-console-log
+cssho.vscode-svgviewer
 dbaeumer.vscode-eslint
 Divlo.vscode-styled-jsx-languageserver
 eamodio.gitlens
@@ -15,6 +16,7 @@ HookyQR.beautify
 humao.rest-client
 jock.svg
 jpoissonnier.vscode-styled-components
+jtr.vscode-position
 mblode.twig-language-2
 mechatroner.rainbow-csv
 mgmcdermott.vscode-language-babel
@@ -25,7 +27,9 @@ pdconsec.vscode-print
 rifi2k.format-html-in-php
 ritwickdey.LiveServer
 sanity-io.vscode-sanity
+Shopify.theme-check-vscode
 SirTori.indenticator
+sissel.shopify-liquid
 softwaredotcom.swdc-vscode
 stylelint.vscode-stylelint
 usernamehw.errorlens

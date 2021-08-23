@@ -56,6 +56,7 @@ source $ZSH/oh-my-zsh.sh # Enables oh-my-zsh
 job_name=/home/adam/Code/ozh003_website/frontend
 
 ## ALIASES
+alias upgrade="sudo pacman -Syyu"
 alias job="xdg-open https://www.notion.so/ && $job_name && code . && cd design/ && st"
 alias jobdir="cd $job_name"
 alias cp="cp -i"                          # confirm before overwriting something
@@ -191,3 +192,6 @@ if [ -f '/home/adam/.netlify/helper/path.zsh.inc' ]; then source '/home/adam/.ne
 test -f '/home/adam/.config/netlify/helper/path.zsh.inc' && source '/home/adam/.config/netlify/helper/path.zsh.inc'
 
 # eval "$(starship init zsh)"
+
+# path for rubygems
+PATH="`ruby -e 'puts Gem.user_dir'`/bin:$PATH"
