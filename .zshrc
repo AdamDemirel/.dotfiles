@@ -56,6 +56,7 @@ source $ZSH/oh-my-zsh.sh # Enables oh-my-zsh
 job_name=/home/adam/Code/ozh003_website/frontend
 
 ## ALIASES
+alias lint:tsc='npx eslint "src/**/*.{js,ts,tsx}"'
 alias upgrade="sudo pacman -Syyu"
 alias job="xdg-open https://www.notion.so/ && $job_name && code . && cd design/ && st"
 alias jobdir="cd $job_name"
