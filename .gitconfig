@@ -40,7 +40,7 @@
 [include]
   path = /home/adam/.netlify/helper/git-config
 [init]
-	defaultBranch = master
+	defaultBranch = main
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
