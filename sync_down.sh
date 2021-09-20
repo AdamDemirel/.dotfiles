@@ -133,18 +133,18 @@ echo "setting up symlinks..."
 rm ~/.zshrc
 rm ~/.gitconfig
 rm ~/.yaourtrc
-rm ~/.config/Code\ -\ OSS/User/settings.json
-rm ~/.config/Code\ -\ OSS/User/keybindings.json
+rm ~/.config/Code/User/settings.json
+rm ~/.config/Code/User/keybindings.json
 rm ~/.config/mimeapps.list
-rm ~/.config/Code\ -\ OSS/User/snippets/javascript.json
+rm ~/.config/Code/User/snippets/javascript.json
 
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/.yaourtrc ~/.yaourtrc
-ln -s ~/.dotfiles/settings.json ~/.config/Code\ -\ OSS/User/settings.json
-ln -s ~/.dotfiles/keybindings.json ~/.config/Code\ -\ OSS/User/keybindings.json
+ln -s ~/.dotfiles/settings.json ~/.config/Code/User/settings.json
+ln -s ~/.dotfiles/keybindings.json ~/.config/Code/User/keybindings.json
 ln -s ~/.dotfiles/mimeapps.list ~/.config/mimeapps.list
-ln -s ~/.dotfiles/snippets/javascript.json ~/.config/Code\ -\ OSS/User/snippets/javascript.json
+`ln -s ~/.dotfiles/snippets/javascript.json ~/.config/Code/User/snippets/javascript.json`
 
 
 echo "configure manual steps in sync_down.sh"

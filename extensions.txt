@@ -34,3 +34,7 @@ softwaredotcom.swdc-vscode
 stylelint.vscode-stylelint
 usernamehw.errorlens
 vscodevim.vim
+wix.vscode-import-cost
+wmaurer.vscode-jumpy
+xabikos.JavaScriptSnippets
+yzhang.markdown-all-in-one
