@@ -56,7 +56,8 @@ source $ZSH/oh-my-zsh.sh # Enables oh-my-zsh
 job_name=/home/adam/Code/ozh003_website/frontend
 
 ## ALIASES
-alias lint:tsc='npx eslint "src/**/*.{js,ts,tsx}"'
+alias tsn='ts-node'
+alias lint:tsc='npx eslint "src/**/*.{tsx,ts,js}"'
 alias upgrade="sudo pacman -Syyu"
 alias job="xdg-open https://www.notion.so/ && $job_name && code . && cd design/ && st"
 alias jobdir="cd $job_name"
@@ -93,7 +94,7 @@ alias launch="npm run build && npx http-server dist/"
 alias l="launch"
 # alias resource="source ~/.bashrc && source ~/.zshrc"
 alias resource="source ~/.zshrc"
-alias dexus="cd /home/adam/Code/Work/dex012-brainwaves-brain/ && nvm use"
+alias dexus="cd /home/adam/Code/Work/dex012-brainwaves-brain/"
 alias babel="npx babel --watch src --out-dir . --presets react-app/prod"
 alias log="DEBUG=\"brain:*,-brain:*-trace\" npm start"
 alias trace="DEBUG=\"brain:*\" npm start"
@@ -132,6 +133,7 @@ alias kernel="mhwd-kernel -li"
 alias userlist="cat /etc/passwd"
 alias python="/usr/bin/python2.7"
 alias getpublicip="curl http://checkip.amazonaws.com/"
+alias aidensgay="getpublicip && echo 1;"
 
 #--------------------------------------------------------------
 # functions
