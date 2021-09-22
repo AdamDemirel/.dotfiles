@@ -1,8 +1,6 @@
 abusaidm.html-snippets
 akamud.vscode-theme-onedark
 bierner.markdown-preview-github-styles
-bmewburn.vscode-intelephense-client
-castwide.solargraph
 ChakrounAnas.turbo-console-log
 cssho.vscode-svgviewer
 dbaeumer.vscode-eslint
@@ -10,7 +8,6 @@ Divlo.vscode-styled-jsx-languageserver
 eamodio.gitlens
 ecmel.vscode-html-css
 EditorConfig.EditorConfig
-felixfbecker.php-debug
 Gruntfuggly.todo-tree
 HookyQR.beautify
 humao.rest-client
@@ -21,10 +18,8 @@ mblode.twig-language-2
 mechatroner.rainbow-csv
 mgmcdermott.vscode-language-babel
 ms-vsliveshare.vsliveshare
-msjsdiag.debugger-for-chrome
 oderwat.indent-rainbow
 pdconsec.vscode-print
-rifi2k.format-html-in-php
 ritwickdey.LiveServer
 sanity-io.vscode-sanity
 Shopify.theme-check-vscode
@@ -33,7 +28,6 @@ sissel.shopify-liquid
 softwaredotcom.swdc-vscode
 stylelint.vscode-stylelint
 usernamehw.errorlens
-vscodevim.vim
 wix.vscode-import-cost
 wmaurer.vscode-jumpy
 xabikos.JavaScriptSnippets

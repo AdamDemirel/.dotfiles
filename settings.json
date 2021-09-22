@@ -28,9 +28,9 @@
   "editor.tabSize": 2,
   "editor.fontSize": 16,
   "editor.bracketPairColorization.enabled": true,
-  "typescript.inlayHints.parameterNames.enabled": "all",
-  "typescript.inlayHints.variableTypes.enabled": "all",
-  "typescript.inlayHints.functionLikeReturnTypes.enabled": "all",
+  // "typescript.inlayHints.parameterNames.enabled": "all",
+  // "typescript.inlayHints.variableTypes.enabled": true,
+  // "typescript.inlayHints.functionLikeReturnTypes.enabled": false,
   "editor.renderWhitespace": "boundary",
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.accessibilitySupport": "off",
@@ -100,7 +100,7 @@
   "less.validate": false,
   "scss.validate": false,
   "explorer.confirmDelete": false,
-  "window.zoomLevel": 2,
+  "window.zoomLevel": 3,
   "todo-tree.general.tags": [
     "BUG",
     "HACK",
@@ -117,5 +117,8 @@
   // "typescript.tsdk": "./node_modules/typescript/lib",
   // prevent errors in script tags within liquid files
   "html.validate.scripts": false,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
   // other
 }
