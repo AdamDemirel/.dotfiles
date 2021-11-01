@@ -1,3 +1,92 @@
+#--------------------------------------------------------------
+
+## DIRECTORY ALIASES
+alias blazer2=/home/adam/Code/blazer-theme-2.0
+
+## GIT ALIASES
+alias co="git checkout"
+alias gs="git status"
+alias gac="git add . && git commit -m"
+alias ga='git add '
+alias gb='git branch '
+alias gc='git commit'
+alias gd='git diff'
+alias push="git push"
+alias p="push"
+alias pull="git pull"
+alias pushem='git push origin master'
+alias pullem='git pull origin master'
+alias gl="git log"
+alias pr="hub pull-request"
+alias pusht="git push && git push --tag"
+alias unstash="git stash show -p | git apply -R"
+alias glog="git log --oneline"
+
+## UNIX ALIASES
+alias upgrade="sudo pacman -Syyu"
+alias cp="cp -i"                          # confirm before overwriting something
+alias df='df -h'                          # human-readable sizes
+alias free='free -m'                      # show sizes in MB
+alias np='nano -w PKGBUILD'
+alias more=less
+alias l="launch"
+alias start="sudo systemctl start"
+alias stop="sudo systemctl stop"
+alias status="sudo systemctl status"
+alias python="/usr/bin/python2.7"
+alias t="touch"
+alias path="which"
+# alias cat="bat"
+alias yoghurt="yaourt"
+alias rimraf="rm -rf"
+alias kernel="mhwd-kernel -li"
+alias userlist="cat /etc/passwd"
+
+## NODE/JSN/NPM ALIASES
+alias tsn='ts-node'
+alias lint:tsc='npx eslint "src/**/*.{tsx,ts,js}"'
+alias nrb="npm run build"
+alias st="npm start"
+alias launch="npm run build && npx http-server dist/"
+alias babel="npx babel --watch src --out-dir . --presets react-app/prod"
+alias log="DEBUG=\"brain:*,-brain:*-trace\" npm start"
+alias trace="DEBUG=\"brain:*\" npm start"
+alias watch="npm run watch"
+alias reactapp="npm init -y && npm i react react-dom babel-loader @babel/core @babel/preset-react webpack webpack-cli webpack-dev-server && mkdir src public public/scripts && touch src/index.js public/index.html && touch webpack.config.js"
+alias build="npm run build"
+alias serve="npm run serve"
+
+## UTILITY/HELPER ALIASES
+alias job="xdg-open https://www.notion.so/ && $job_name && code . && cd design/ && st"
+alias jobdir="cd $job_name"
+alias inotify="echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p"
+alias weather="curl wttr.in/sydney"
+alias zshrc="kate ~/.zshrc"
+alias resource="source ~/.zshrc" # alias resource="source ~/.bashrc && source ~/.zshrc"
+alias k="kill -9"
+alias sync_up="cd ~/.dotfiles/ && ./sync_up.sh"
+alias sync_down="cd ~/.dotfiles/ && ./sync_down.sh"
+alias c="code"
+alias gp="git add . && git commit -m 'random change' && git push"
+alias gpp="cd /home/adam/Documents/ && gp"
+alias calc="node -p"
+alias dockerclean="docker volume prune && docker rm $(docker ps -a -q) -f"
+#alias wp="docker-compose exec wordpress php -d memory_limit=512M /usr/local/bin/wp --allow-root"
+alias wpexport="wp export --stdout --skip_comments > config/dev-content.xml\n"
+alias dc="docker-compose"
+alias dotfiles="cd ~/.dotfiles"
+alias getpublicip="curl http://checkip.amazonaws.com/"
+
+## OTHER ALIASES
+
+
+
+
+
+
+
+#--------------------------------------------------------------
+
 # Paths
 # Add new path with colon separation
 export PATH=$HOME/bin:/usr/local/bin/:/home/adam/Code/emsdk:/home/adam/Code/emsdk/upstream/emscripten:$PATH
@@ -51,89 +140,22 @@ export ZSH="/home/adam/.oh-my-zsh" # Path to your oh-my-zsh installation.
 source $ZSH/oh-my-zsh.sh # Enables oh-my-zsh
 . "$NVM_DIR/nvm.sh" # This loads nvm
 
-#--------------------------------------------------------------
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/adam/google-cloud-sdk/path.zsh.inc' ]; then . '/home/adam/google-cloud-sdk/path.zsh.inc'; fi
 
-job_name=/home/adam/Code/ozh003_website/frontend
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/adam/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/adam/google-cloud-sdk/completion.zsh.inc'; fi
 
-## ALIASES
-alias tsn='ts-node'
-alias lint:tsc='npx eslint "src/**/*.{tsx,ts,js}"'
-alias upgrade="sudo pacman -Syyu"
-alias job="xdg-open https://www.notion.so/ && $job_name && code . && cd design/ && st"
-alias jobdir="cd $job_name"
-alias cp="cp -i"                          # confirm before overwriting something
-alias df='df -h'                          # human-readable sizes
-alias free='free -m'                      # show sizes in MB
-alias np='nano -w PKGBUILD'
-alias more=less
-alias inotify="echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p"
-alias weather="curl wttr.in/sydney"
-alias agent="~/.datadog-agent/bin/agent"
-alias zshrc="kate ~/.zshrc"
-alias be="bundle exec"
-alias ber="bundle exec rake"
-alias gs="git status"
-alias gac="git add . && git commit -m"
-alias ga='git add '
-alias gb='git branch '
-alias gc='git commit'
-alias gd='git diff'
-alias go='git checkout'
-alias rc='rails c'
-alias rs='rails s'
-alias r='rspec'
-alias push="git push"
-alias p="push"
-alias pull="git pull"
-alias pushem='git push origin master'
-alias pullem='git pull origin master'
-alias gl="git log"
-alias nrb="npm run build"
-alias st="npm start"
-alias launch="npm run build && npx http-server dist/"
-alias l="launch"
-# alias resource="source ~/.bashrc && source ~/.zshrc"
-alias resource="source ~/.zshrc"
-alias dexus="cd /home/adam/Code/Work/dex012-brainwaves-brain/"
-alias babel="npx babel --watch src --out-dir . --presets react-app/prod"
-alias log="DEBUG=\"brain:*,-brain:*-trace\" npm start"
-alias trace="DEBUG=\"brain:*\" npm start"
-alias k="kill -9"
-alias start="sudo systemctl start"
-alias stop="sudo systemctl stop"
-alias status="sudo systemctl status"
-alias pr="hub pull-request"
-alias pusht="git push && git push --tag"
-alias unstash="git stash show -p | git apply -R"
-alias watch="npm run watch"
-alias ozh="cd ~/Code/ozh001-annual-report"
-alias reactapp="npm init -y && npm i react react-dom babel-loader @babel/core @babel/preset-react webpack webpack-cli webpack-dev-server && mkdir src public public/scripts && touch src/index.js public/index.html && touch webpack.config.js"
-alias build="npm run build"
-alias serve="npm run serve"
-alias portfolio="cd /home/adam/Code/myportfolio/content/"
-alias gp="git add . && git commit -m 'random change' && git push"
-alias gpp="cd /home/adam/Documents/ && gp"
-alias calc="node -p"
-alias dockerclean="docker volume prune && docker rm $(docker ps -a -q) -f"
-#alias wp="docker-compose exec wordpress php -d memory_limit=512M /usr/local/bin/wp --allow-root"
-alias wpexport="wp export --stdout --skip_comments > config/dev-content.xml\n"
-alias dc="docker-compose"
-alias glog="git log --oneline"
-alias c="code"
-alias t="touch"
-alias path="which"
-alias sync_up="cd ~/.dotfiles/ && ./sync_up.sh"
-alias sync_down="cd ~/.dotfiles/ && ./sync_down.sh"
-# alias cat="bat"
-alias yoghurt="yaourt"
-alias dotfiles="cd ~/.dotfiles"
-alias rimraf="rm -rf"
-alias strictnode="node --use_strict"
-alias kernel="mhwd-kernel -li"
-alias userlist="cat /etc/passwd"
-alias python="/usr/bin/python2.7"
-alias getpublicip="curl http://checkip.amazonaws.com/"
-alias aidensgay="getpublicip && echo 1;"
+# The next line updates PATH for Netlify's Git Credential Helper.
+if [ -f '/home/adam/.netlify/helper/path.zsh.inc' ]; then source '/home/adam/.netlify/helper/path.zsh.inc'; fi
+
+# The next line updates PATH for Netlify's Git Credential Helper.
+test -f '/home/adam/.config/netlify/helper/path.zsh.inc' && source '/home/adam/.config/netlify/helper/path.zsh.inc'
+
+# eval "$(starship init zsh)"
+
+# path for rubygems
+PATH="`ruby -e 'puts Gem.user_dir'`/bin:$PATH"
 
 #--------------------------------------------------------------
 # functions
@@ -182,19 +204,3 @@ load-nvmrc
 
 #--------------------------------------------------------------
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/adam/google-cloud-sdk/path.zsh.inc' ]; then . '/home/adam/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/adam/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/adam/google-cloud-sdk/completion.zsh.inc'; fi
-
-# The next line updates PATH for Netlify's Git Credential Helper.
-if [ -f '/home/adam/.netlify/helper/path.zsh.inc' ]; then source '/home/adam/.netlify/helper/path.zsh.inc'; fi
-
-# The next line updates PATH for Netlify's Git Credential Helper.
-test -f '/home/adam/.config/netlify/helper/path.zsh.inc' && source '/home/adam/.config/netlify/helper/path.zsh.inc'
-
-# eval "$(starship init zsh)"
-
-# path for rubygems
-PATH="`ruby -e 'puts Gem.user_dir'`/bin:$PATH"

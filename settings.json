@@ -70,7 +70,7 @@
   // linters/formatters
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
-    "source.fixAll.stylelint": true
+    // "source.fixAll.stylelint": true
   },
   "[javascript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
@@ -78,9 +78,12 @@
   "[html]": {
     "editor.defaultFormatter": "HookyQR.beautify"
   },
+  "[liquid]": {
+    "editor.defaultFormatter": "sissel.shopify-liquid",
+    "editor.formatOnSave": true,
+  },
   "files.associations": {
     "*.njk": "twig",
-    "*.liquid": "html"
   },
   "[twig]": {
     "editor.formatOnSave": true,
@@ -119,6 +122,9 @@
   "html.validate.scripts": false,
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
   },
   // other
 }

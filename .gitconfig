@@ -26,6 +26,7 @@
 	s = status
 	unchange = checkout --
 	f = fetch
+	current = rev-parse --abbrev-ref HEAD
 [pager]
 	branch = false
 [include]
@@ -41,13 +42,6 @@
   path = /home/adam/.netlify/helper/git-config
 [init]
 	defaultBranch = main
-[filter "lfs"]
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-
-# This next lines include Netlify's Git Credential Helper configuration in your Git configuration.
 [include]
   path = /home/adam/.config/netlify/helper/git-config
 [hub]

@@ -11,6 +11,7 @@ EditorConfig.EditorConfig
 Gruntfuggly.todo-tree
 HookyQR.beautify
 humao.rest-client
+IronGeek.vscode-env
 jock.svg
 jpoissonnier.vscode-styled-components
 jtr.vscode-position
