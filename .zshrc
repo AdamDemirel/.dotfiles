@@ -55,6 +55,9 @@ alias watch="npm run watch"
 alias reactapp="npm init -y && npm i react react-dom babel-loader @babel/core @babel/preset-react webpack webpack-cli webpack-dev-server && mkdir src public public/scripts && touch src/index.js public/index.html && touch webpack.config.js"
 alias build="npm run build"
 alias serve="npm run serve"
+alias dev="npm run dev"
+alias fresh="npm run fresh"
+alias connect="npm run connect"
 
 ## UTILITY/HELPER ALIASES
 alias job="xdg-open https://www.notion.so/ && $job_name && code . && cd design/ && st"

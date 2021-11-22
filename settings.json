@@ -103,7 +103,7 @@
   "less.validate": false,
   "scss.validate": false,
   "explorer.confirmDelete": false,
-  "window.zoomLevel": 3,
+  "window.zoomLevel": 2,
   "todo-tree.general.tags": [
     "BUG",
     "HACK",
@@ -127,4 +127,5 @@
     "editor.defaultFormatter": "stylelint.vscode-stylelint"
   },
   // other
+  "shopifyLiquid.shopifyCLIPath": "/home/adam/.gem/ruby/3.0.0/bin/shopify"
 }
