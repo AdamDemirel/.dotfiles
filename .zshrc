@@ -58,6 +58,7 @@ alias serve="npm run serve"
 alias dev="npm run dev"
 alias fresh="npm run fresh"
 alias connect="npm run connect"
+alias deploy="npm run deploy"
 
 ## UTILITY/HELPER ALIASES
 alias job="xdg-open https://www.notion.so/ && $job_name && code . && cd design/ && st"
