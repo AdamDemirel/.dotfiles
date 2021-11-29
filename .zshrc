@@ -21,6 +21,8 @@ alias pr="hub pull-request"
 alias pusht="git push && git push --tag"
 alias unstash="git stash show -p | git apply -R"
 alias glog="git log --oneline"
+alias merge="git merge"
+alias gdel="git branch -D"
 
 ## UNIX ALIASES
 alias upgrade="sudo pacman -Syyu"
@@ -59,6 +61,7 @@ alias dev="npm run dev"
 alias fresh="npm run fresh"
 alias connect="npm run connect"
 alias deploy="npm run deploy"
+alias audit="npm audit --production" # see https://overreacted.io/npm-audit-broken-by-design/
 
 ## UTILITY/HELPER ALIASES
 alias job="xdg-open https://www.notion.so/ && $job_name && code . && cd design/ && st"
