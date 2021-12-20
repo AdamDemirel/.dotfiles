@@ -23,6 +23,24 @@ alias unstash="git stash show -p | git apply -R"
 alias glog="git log --oneline"
 alias merge="git merge"
 alias gdel="git branch -D"
+alias stash:list="git stash list"
+alias sts="git status"
+
+function stash:apply {
+  if [ ! -n "$1" ]; then
+    echo "Apply a stash number"
+  else
+    git stash apply stash@{$1}
+  fi
+}
+
+function stash:drop {
+  if [ ! -n "$1" ]; then
+    echo "Apply a stash number"
+  else
+    git stash drop stash@{$1}
+  fi
+}
 
 ## UNIX ALIASES
 alias upgrade="sudo pacman -Syyu"
