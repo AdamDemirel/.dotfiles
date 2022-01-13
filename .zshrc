@@ -25,6 +25,7 @@ alias merge="git merge"
 alias gdel="git branch -D"
 alias stash:list="git stash list"
 alias sts="git status"
+alias whodeleted="git log --full-history --"
 
 function stash:apply {
   if [ ! -n "$1" ]; then
