@@ -155,7 +155,7 @@ plugins=(
 #--------------------------------------------------------------
 
 ## ENVIRONMENT VARIABLES
-export GIT_EDITOR='code'
+export GIT_EDITOR='code --wait'
 export EDITOR=/usr/bin/nano
 export NVM_DIR="$HOME/.nvm"
 export ZSH="/home/adam/.oh-my-zsh" # Path to your oh-my-zsh installation.

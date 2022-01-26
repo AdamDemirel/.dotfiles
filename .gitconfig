@@ -6,9 +6,10 @@
 [core]
 	autocrlf = false
 	safecrlf = false
-	editor = code --wait
 	filemode = false
 	repositoryformatversion = 0
+	editor = code -w
+	editor = code -w
 [alias]
 	co = checkout
 	ci = commit
@@ -21,7 +22,7 @@
 	last = log -1 HEAD
 	unstagerm = reset HEAD --
 	ss = status -s
-	l = log  
+	l = log
 	ammend = commit --ammend
 	s = status
 	unchange = checkout --
@@ -49,10 +50,10 @@
 [diff]
   tool = vscode
 [difftool "vscode"]
-  cmd = code --wait --diff $LOCAL $REMOTE
+  cmd = code -w --diff $LOCAL $REMOTE
 [merge]
   tool = vscode
 [mergetool "vscode"]
-  cmd = code --wait $MERGED
+  cmd = code -w $MERGED
 [commit]
-  tool = vscode
+  tool = code -w
