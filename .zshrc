@@ -81,6 +81,7 @@ alias fresh="npm run fresh"
 alias connect="npm run connect"
 alias deploy="npm run deploy"
 alias audit="npm audit --production" # see https://overreacted.io/npm-audit-broken-by-design/
+alias i="npm install"
 
 ## UTILITY/HELPER ALIASES
 alias job="xdg-open https://www.notion.so/ && $job_name && code . && cd design/ && st"
@@ -154,7 +155,7 @@ plugins=(
 #--------------------------------------------------------------
 
 ## ENVIRONMENT VARIABLES
-export GIT_EDITOR='nano'
+export GIT_EDITOR='code'
 export EDITOR=/usr/bin/nano
 export NVM_DIR="$HOME/.nvm"
 export ZSH="/home/adam/.oh-my-zsh" # Path to your oh-my-zsh installation.
