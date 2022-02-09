@@ -1,5 +1,6 @@
 abusaidm.html-snippets
 akamud.vscode-theme-onedark
+benjaminadk.emojis4git
 bierner.markdown-preview-github-styles
 ChakrounAnas.turbo-console-log
 cssho.vscode-svgviewer
@@ -23,6 +24,7 @@ oderwat.indent-rainbow
 pdconsec.vscode-print
 ritwickdey.LiveServer
 sanity-io.vscode-sanity
+seatonjiang.gitmoji-vscode
 Shopify.theme-check-vscode
 SirTori.indenticator
 sissel.shopify-liquid

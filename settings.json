@@ -70,7 +70,7 @@
   // linters/formatters
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
-    // "source.fixAll.stylelint": true
+    "source.fixAll.stylelint": true
   },
   "[javascript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
@@ -78,9 +78,10 @@
   "[html]": {
     "editor.defaultFormatter": "HookyQR.beautify"
   },
+  "liquid.format": true,
   "[liquid]": {
-    "editor.defaultFormatter": "sissel.shopify-liquid",
     "editor.formatOnSave": true,
+    "editor.defaultFormatter": "sissel.shopify-liquid",
   },
   "files.associations": {
     "*.njk": "twig",
@@ -115,7 +116,6 @@
   ],
   "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
   "workbench.editor.untitled.hint": "hidden",
-  "liquid.format": true,
   // https://basarat.gitbook.io/typescript/getting-started
   // "typescript.tsdk": "./node_modules/typescript/lib",
   // prevent errors in script tags within liquid files
@@ -127,6 +127,5 @@
     "editor.defaultFormatter": "stylelint.vscode-stylelint"
   },
   // other
-  "shopifyLiquid.shopifyCLIPath": "/home/adam/.gem/ruby/3.0.0/bin/shopify",
   "editor.codeLens": false
 }

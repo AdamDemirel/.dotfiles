@@ -26,6 +26,7 @@ alias gdel="git branch -D"
 alias stash:list="git stash list"
 alias sts="git status"
 alias whodeleted="git log --full-history --"
+alias commitcount="git rev-list HEAD --count"
 
 function stash:apply {
   if [ ! -n "$1" ]; then
@@ -150,6 +151,7 @@ ZSH_THEME="bunnyruni"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  emoji
 )
 
 #--------------------------------------------------------------
