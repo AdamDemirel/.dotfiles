@@ -28,6 +28,7 @@ alias sts="git status"
 alias whodeleted="git log --full-history --"
 alias commitcount="git rev-list HEAD --count"
 
+# usage: $ stash: apply 0
 function stash:apply {
   if [ ! -n "$1" ]; then
     echo "Apply a stash number"
