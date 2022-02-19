@@ -35,4 +35,3 @@ webhint.vscode-webhint
 wix.vscode-import-cost
 wmaurer.vscode-jumpy
 xabikos.JavaScriptSnippets
-yzhang.markdown-all-in-one
