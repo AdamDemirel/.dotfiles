@@ -16,6 +16,7 @@ alias p="push"
 alias pull="git pull"
 alias pushem='git push origin master'
 alias pullem='git pull origin master'
+alias pullemm='git pull origin main'
 alias gl="git log"
 alias pr="hub pull-request"
 alias pusht="git push && git push --tag"
