@@ -128,5 +128,8 @@
   },
   // other
   "editor.codeLens": false,
-  "markdown-preview-github-styles.colorTheme": "light"
+  "markdown-preview-github-styles.colorTheme": "light",
+  "redhat.telemetry.enabled": false,
+  "xml.symbols.maxItemsComputed": 100000,
+  "security.workspace.trust.untrustedFiles": "open"
 }

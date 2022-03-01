@@ -85,6 +85,7 @@ alias connect="npm run connect"
 alias deploy="npm run deploy"
 alias audit="npm audit --production" # see https://overreacted.io/npm-audit-broken-by-design/
 alias i="npm install"
+alias listlinked="npm ls -g --depth=0 --link=true"
 
 ## UTILITY/HELPER ALIASES
 alias job="xdg-open https://www.notion.so/ && $job_name && code . && cd design/ && st"
