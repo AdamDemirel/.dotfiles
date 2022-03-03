@@ -30,6 +30,7 @@ alias whodeleted="git log --full-history --"
 alias commitcount="git rev-list HEAD --count"
 alias amend="git commit --amend"
 alias ammend="amend"
+alias blazer="cd /home/adam/Code/blazer-theme-2.0"
 
 # usage: $ stash: apply 0
 function stash:apply {
