@@ -28,6 +28,8 @@ alias stash:list="git stash list"
 alias sts="git status"
 alias whodeleted="git log --full-history --"
 alias commitcount="git rev-list HEAD --count"
+alias amend="git commit --amend"
+alias ammend="amend"
 
 # usage: $ stash: apply 0
 function stash:apply {
