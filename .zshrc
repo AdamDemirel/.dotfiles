@@ -31,6 +31,7 @@ alias commitcount="git rev-list HEAD --count"
 alias amend="git commit --amend"
 alias ammend="amend"
 alias blazer="cd /home/adam/Code/blazer-theme-2.0"
+alias del="git branch -D"
 
 # usage: $ stash: apply 0
 function stash:apply {
