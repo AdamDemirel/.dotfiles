@@ -36,6 +36,7 @@ softwaredotcom.swdc-vscode
 stylelint.vscode-stylelint
 usernamehw.errorlens
 webhint.vscode-webhint
+wix.glean
 wix.vscode-import-cost
 wmaurer.vscode-jumpy
 xabikos.JavaScriptSnippets
