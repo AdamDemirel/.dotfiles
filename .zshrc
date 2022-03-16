@@ -69,6 +69,7 @@ alias yoghurt="yaourt"
 alias rimraf="rm -rf"
 alias kernel="mhwd-kernel -li"
 alias userlist="cat /etc/passwd"
+alias functions="print -l ${(ok)functions[(I)[^_]*]}" # list shell functions
 
 ## NODE/JSN/NPM ALIASES
 alias tsn='ts-node'
