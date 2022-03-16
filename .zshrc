@@ -97,7 +97,7 @@ alias job="xdg-open https://www.notion.so/ && $job_name && code . && cd design/ 
 alias jobdir="cd $job_name"
 alias inotify="echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p"
 alias weather="curl wttr.in/sydney"
-alias zshrc="kate ~/.zshrc"
+alias zshrc="code ~/.zshrc"
 alias resource="source ~/.zshrc" # alias resource="source ~/.bashrc && source ~/.zshrc"
 alias k="kill -9"
 alias sync_up="cd ~/.dotfiles/ && ./sync_up.sh"
