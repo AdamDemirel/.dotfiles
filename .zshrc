@@ -1,5 +1,7 @@
 # # https://starship.rs/guide/#%F0%9F%9A%80-installation
 eval "$(starship init zsh)"
+export STARSHIP_CONFIG=~.dotfiles/starship.toml
+
 
 #--------------------------------------------------------------
 
