@@ -1,3 +1,6 @@
+# # https://starship.rs/guide/#%F0%9F%9A%80-installation
+eval "$(starship init zsh)"
+
 #--------------------------------------------------------------
 
 ## DIRECTORY ALIASES
@@ -127,11 +130,12 @@ alias getpublicip="curl http://checkip.amazonaws.com/"
 # Add new path with colon separation
 export PATH=$HOME/bin:/usr/local/bin/:/home/adam/Code/emsdk:/home/adam/Code/emsdk/upstream/emscripten:$PATH
 
-if [ -f '/home/adam/.netlify/helper/path.zsh.inc' ]; then source '/home/adam/.netlify/helper/path.zsh.inc'; fi # Adds Netlify's Git Credential Helper to PATH
+# # The next line updates PATH for Netlify's Git Credential Helper.
+if [ -f '/home/adam/.netlify/helper/path.zsh.inc' ]; then source '/home/adam/.netlify/helper/path.zsh.inc'; fi
 
-# deno
-export DENO_INSTALL="/home/adam/.deno"
-export PATH="$DENO_INSTALL/bin:$PATH"
+# # deno
+# export DENO_INSTALL="/home/adam/.deno"
+# export PATH="$DENO_INSTALL/bin:$PATH"
 
 # Start ssh
 eval `ssh-agent` &> /dev/null
@@ -167,29 +171,19 @@ plugins=(
 ## ENVIRONMENT VARIABLES
 export GIT_EDITOR='code --wait'
 export EDITOR=/usr/bin/nano
-export NVM_DIR="$HOME/.nvm"
 export ZSH="/home/adam/.oh-my-zsh" # Path to your oh-my-zsh installation.
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 #--------------------------------------------------------------
 
 # LOADERS
-source $ZSH/oh-my-zsh.sh # Enables oh-my-zsh
-. "$NVM_DIR/nvm.sh" # This loads nvm
+# source $ZSH/oh-my-zsh.sh # Enables oh-my-zsh
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/adam/google-cloud-sdk/path.zsh.inc' ]; then . '/home/adam/google-cloud-sdk/path.zsh.inc'; fi
+# if [ -f '/home/adam/google-cloud-sdk/path.zsh.inc' ]; then . '/home/adam/google-cloud-sdk/path.zsh.inc'; fi
 
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/adam/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/adam/google-cloud-sdk/completion.zsh.inc'; fi
-
-# The next line updates PATH for Netlify's Git Credential Helper.
-if [ -f '/home/adam/.netlify/helper/path.zsh.inc' ]; then source '/home/adam/.netlify/helper/path.zsh.inc'; fi
-
-# The next line updates PATH for Netlify's Git Credential Helper.
-test -f '/home/adam/.config/netlify/helper/path.zsh.inc' && source '/home/adam/.config/netlify/helper/path.zsh.inc'
-
-# eval "$(starship init zsh)"
+# # The next line enables shell command completion for gcloud.
+# if [ -f '/home/adam/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/adam/google-cloud-sdk/completion.zsh.inc'; fi
 
 # path for rubygems
 PATH="`ruby -e 'puts Gem.user_dir'`/bin:$PATH"
@@ -214,8 +208,12 @@ function getssl {
     curl --insecure -vvI $1 2>&1 | awk 'BEGIN { cert=0 } /^\* SSL connection/ { cert=1 } /^\*/ { if (cert) print }'
   fi
 }
-  
+
 #--------------------------------------------------------------
+
+# Load NVM https://github.com/nvm-sh/nvm#install--update-script
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. $NVM_DIR/nvm.sh --no-use # This loads nvm
 
 # Automatically calls `nvm use` in a directory with .nvmrc
 autoload -U add-zsh-hook
@@ -232,12 +230,11 @@ load-nvmrc() {
       nvm use
     fi
   elif [ "$node_version" != "$(nvm version default)" ]; then
-    echo "Reverting to nvm default version"
-    nvm use default
+    # echo "Reverting to nvm default version"
+    # nvm use default
   fi
 }
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
 #--------------------------------------------------------------
-

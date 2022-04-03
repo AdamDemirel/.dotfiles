@@ -2,6 +2,7 @@ abusaidm.html-snippets
 akamud.vscode-theme-onedark
 benjaminadk.emojis4git
 bierner.markdown-preview-github-styles
+bungcip.better-toml
 ChakrounAnas.turbo-console-log
 cssho.vscode-svgviewer
 dbaeumer.vscode-eslint
