@@ -33,8 +33,9 @@ alias ammend="amend"
 alias blazer="cd /home/adam/Code/blazer-theme-2.0"
 alias del="git branch -D"
 
-# pushes and sets git origin with curr branch
-function po {
+# pushes and sets git origin with curr branch.
+# psu stands for "push, set upstream"
+function psu {
   branch=$(git rev-parse --abbrev-ref HEAD)
   git push -u origin $branch
 }
@@ -72,7 +73,7 @@ alias t="touch"
 alias path="which"
 # alias cat="bat"
 alias yoghurt="yaourt"
-alias rimraf="rm -rf"
+# alias rimraf="rm -rf"
 alias kernel="mhwd-kernel -li"
 alias userlist="cat /etc/passwd"
 alias functions="print -l ${(ok)functions[(I)[^_]*]}" # list shell functions
@@ -91,6 +92,7 @@ alias reactapp="npm init -y && npm i react react-dom babel-loader @babel/core @b
 alias build="npm run build"
 alias serve="npm run serve"
 alias dev="npm run dev"
+alias devo="npm run develop"
 alias fresh="npm run fresh"
 alias connect="npm run connect"
 alias deploy="npm run deploy"
