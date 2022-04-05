@@ -33,6 +33,12 @@ alias ammend="amend"
 alias blazer="cd /home/adam/Code/blazer-theme-2.0"
 alias del="git branch -D"
 
+# pushes and sets git origin with curr branch
+function po {
+  branch=$(git rev-parse --abbrev-ref HEAD)
+  git push -u origin $branch
+}
+
 # usage: $ stash: apply 0
 function stash:apply {
   if [ ! -n "$1" ]; then
