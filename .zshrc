@@ -23,7 +23,6 @@ alias pusht="git push && git push --tag"
 alias unstash="git stash show -p | git apply -R"
 alias glog="git log --oneline"
 alias merge="git merge"
-alias gdel="git branch -D"
 alias stash:list="git stash list"
 alias sts="git status"
 alias whodeleted="git log --full-history --"
@@ -31,13 +30,21 @@ alias commitcount="git rev-list HEAD --count"
 alias amend="git commit --amend"
 alias ammend="amend"
 alias blazer="cd /home/adam/Code/blazer-theme-2.0"
-alias del="git branch -D"
+
+alias branch:del="git branch -D"
+alias branch:rename="git branch -M"
 
 # pushes and sets git origin with curr branch.
 # psu stands for "push, set upstream"
 function psu {
   branch=$(git rev-parse --abbrev-ref HEAD)
   git push -u origin $branch
+}
+
+# pulls from a remote origin with same name as curr branch
+function pusu {
+  branch=$(git rev-parse --abbrev-ref HEAD)
+  git pull origin $branch
 }
 
 # usage: $ stash: apply 0
@@ -182,7 +189,7 @@ export ZSH="/home/adam/.oh-my-zsh" # Path to your oh-my-zsh installation.
 #--------------------------------------------------------------
 
 # LOADERS
-# source $ZSH/oh-my-zsh.sh # Enables oh-my-zsh
+source $ZSH/oh-my-zsh.sh # Enables oh-my-zsh
 
 # The next line updates PATH for the Google Cloud SDK.
 # if [ -f '/home/adam/google-cloud-sdk/path.zsh.inc' ]; then . '/home/adam/google-cloud-sdk/path.zsh.inc'; fi
@@ -245,5 +252,5 @@ load-nvmrc
 #--------------------------------------------------------------
 
 # # https://starship.rs/guide/#%F0%9F%9A%80-installation
-eval "$(starship init zsh)"
-export STARSHIP_CONFIG=~/.dotfiles/starship.toml
+# eval "$(starship init zsh)"
+# export STARSHIP_CONFIG=~/.dotfiles/starship.toml
