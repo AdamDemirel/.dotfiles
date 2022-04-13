@@ -6,31 +6,37 @@ alias blazer2=/home/adam/Code/blazer-theme-2.0
 ## GIT ALIASES
 alias co="git checkout"
 alias gs="git status"
-alias gac="git add . && git commit -m"
-alias ga='git add '
-alias gb='git branch '
-alias gc='git commit -m'
 alias gd='git diff'
+alias pr="hub pull-request"
+alias pusht="git push && git push --tag"
+alias unstash="git stash show -p | git apply -R"
+alias merge="git merge"
+alias sts="git status"
+alias whodeleted="git log --full-history --"
+
+# push/pull commands
 alias push="git push"
 alias p="push"
 alias pull="git pull"
 alias pushem='git push origin master'
 alias pullem='git pull origin master'
 alias pullemm='git pull origin main'
+
+# log commands
 alias gl="git log"
-alias pr="hub pull-request"
-alias pusht="git push && git push --tag"
-alias unstash="git stash show -p | git apply -R"
 alias glog="git log --oneline"
-alias merge="git merge"
-alias stash:list="git stash list"
-alias sts="git status"
-alias whodeleted="git log --full-history --"
-alias commitcount="git rev-list HEAD --count"
+
+# and add commit commands
+alias ga='git add'
+alias gac="git add . && git commit -m"
+alias gc='git commit -m'
 alias amend="git commit --amend"
 alias ammend="amend"
-alias blazer="cd /home/adam/Code/blazer-theme-2.0"
+alias commitcount="git rev-list HEAD --count"
+alias commit = "git commit"
 
+# branch commands
+alias gb='git branch'
 alias branch:del="git branch -D"
 alias branch:rename="git branch -M"
 
@@ -47,7 +53,10 @@ function pusu {
   git pull origin $branch
 }
 
-# usage: $ stash: apply 0
+# stash commands
+alias stash:list="git stash list"
+
+## usage: $ stash: apply 0
 function stash:apply {
   if [ ! -n "$1" ]; then
     echo "Apply a stash number"
