@@ -33,7 +33,7 @@ alias gc='git commit -m'
 alias amend="git commit --amend"
 alias ammend="amend"
 alias commitcount="git rev-list HEAD --count"
-alias commit = "git commit"
+alias commit="git commit"
 
 # branch commands
 alias gb='git branch'
