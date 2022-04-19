@@ -39,6 +39,7 @@ alias commit="git commit"
 alias gb='git branch'
 alias branch:del="git branch -D"
 alias branch:rename="git branch -M"
+alias branch:all="git branch -a"
 
 # pushes and sets git origin with curr branch.
 # psu stands for "push, set upstream"
@@ -263,3 +264,6 @@ load-nvmrc
 # # https://starship.rs/guide/#%F0%9F%9A%80-installation
 # eval "$(starship init zsh)"
 # export STARSHIP_CONFIG=~/.dotfiles/starship.toml
+
+export PNPM_HOME="/home/adam/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
