@@ -23,23 +23,24 @@ alias pullem='git pull origin master'
 alias pullemm='git pull origin main'
 
 # log commands
-alias gl="git log"
-alias glog="git log --oneline"
+alias gl='git log'
+alias glog='git log --oneline'
 
 # and add commit commands
 alias ga='git add'
-alias gac="git add . && git commit -m"
+alias gac='git add . && git commit -m'
 alias gc='git commit -m'
 alias amend="git commit --amend"
-alias ammend="amend"
-alias commitcount="git rev-list HEAD --count"
-alias commit="git commit"
+alias ammend='amend'
+alias commitcount='git rev-list HEAD --count'
+alias commit='git commit'
 
 # branch commands
 alias gb='git branch'
-alias branch:del="git branch -D"
-alias branch:rename="git branch -M"
-alias branch:all="git branch -a"
+alias branch='git branch'
+alias branch:del='git branch -D'
+alias branch:rename='git branch -M'
+alias branch:all='git branch -a'
 
 # pushes and sets git origin with curr branch.
 # psu stands for "push, set upstream"
@@ -116,6 +117,7 @@ alias deploy="npm run deploy"
 alias audit="npm audit --production" # see https://overreacted.io/npm-audit-broken-by-design/
 alias i="npm install"
 alias listlinked="npm ls -g --depth=0 --link=true"
+alias run="npm run" # lists npm scripts
 
 ## UTILITY/HELPER ALIASES
 alias job="xdg-open https://www.notion.so/ && $job_name && code . && cd design/ && st"
