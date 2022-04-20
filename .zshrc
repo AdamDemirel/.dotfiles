@@ -41,6 +41,7 @@ alias branch='git branch'
 alias branch:del='git branch -D'
 alias branch:rename='git branch -M'
 alias branch:all='git branch -a'
+alias branch:contains='git branch --contains' # branch:contains {sha} check which branches contain a commit
 
 # pushes and sets git origin with curr branch.
 # psu stands for "push, set upstream"
