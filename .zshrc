@@ -45,8 +45,8 @@ alias branch:contains='git branch --contains' # branch:contains {sha} check whic
 alias branch:remotes='git branch -r'
 alias branch:unmerged='git branch -r --no-merged'
 alias branch:merged='git branch -r --merged'
-alias branch:prune:dry='git branch prune origin --dry-run'
-alias branch:prune='git branch prune origin'
+alias branch:prune:dry='git remote prune origin --dry-run'
+alias branch:prune='git remote prune origin'
 
 # pushes and sets git origin with curr branch.
 # psu stands for "push, set upstream"
