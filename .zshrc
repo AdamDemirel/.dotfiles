@@ -34,10 +34,17 @@ alias amend="git commit --amend"
 alias ammend='amend'
 alias commitcount='git rev-list HEAD --count'
 alias commit='git commit'
+alias untracked:dry='git clean -n'
+alias untracked:del='git clean -fx' # both tracked and untracked
+alias untracked:dir:del='git clean -fd'
+alias untracked:ignored:del='git clean -fX'
+alias untracked:unignored:del='git clean -f'
 
 # branch commands
 alias gb='git branch'
 alias branch='git branch'
+alias branch:new='git checkout -b'
+alias cob='branch:new' # "git CheckOut -B"
 alias branch:del='git branch -D'
 alias branch:rename='git branch -M'
 alias branch:all='git branch -a'
@@ -161,7 +168,7 @@ alias getpublicip="curl http://checkip.amazonaws.com/"
 export PATH=$HOME/bin:/usr/local/bin/:/home/adam/Code/emsdk:/home/adam/Code/emsdk/upstream/emscripten:$PATH
 
 # # The next line updates PATH for Netlify's Git Credential Helper.
-if [ -f '/home/adam/.netlify/helper/path.zsh.inc' ]; then source '/home/adam/.netlify/helper/path.zsh.inc'; fi
+# if [ -f '/home/adam/.netlify/helper/path.zsh.inc' ]; then source '/home/adam/.netlify/helper/path.zsh.inc'; fi
 
 # # deno
 # export DENO_INSTALL="/home/adam/.deno"
@@ -273,5 +280,6 @@ load-nvmrc
 # eval "$(starship init zsh)"
 # export STARSHIP_CONFIG=~/.dotfiles/starship.toml
 
-export PNPM_HOME="/home/adam/.local/share/pnpm"
-export PATH="$PNPM_HOME:$PATH"
+# export PNPM_HOME="/home/adam/.local/share/pnpm"
+# export PATH="$PNPM_HOME:$PATH"
+export PATH=~/.npm-global/bin:$PATH

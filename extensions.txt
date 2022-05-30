@@ -3,6 +3,7 @@ akamud.vscode-theme-onedark
 benjaminadk.emojis4git
 bierner.markdown-preview-github-styles
 bungcip.better-toml
+castwide.solargraph
 ChakrounAnas.turbo-console-log
 cssho.vscode-svgviewer
 dbaeumer.vscode-eslint
@@ -10,8 +11,10 @@ Divlo.vscode-styled-jsx-languageserver
 eamodio.gitlens
 ecmel.vscode-html-css
 EditorConfig.EditorConfig
+groksrc.ruby
 Gruntfuggly.todo-tree
 HookyQR.beautify
+hoovercj.ruby-linter
 humao.rest-client
 IronGeek.vscode-env
 jasonnutter.search-node-modules
@@ -21,10 +24,13 @@ jtr.vscode-position
 mblode.twig-language-2
 mechatroner.rainbow-csv
 mgmcdermott.vscode-language-babel
+miguel-savignano.ruby-symbols
+misogi.ruby-rubocop
 moshfeu.compare-folders
 ms-vsliveshare.vsliveshare
 oderwat.indent-rainbow
 pdconsec.vscode-print
+rebornix.ruby
 redhat.vscode-xml
 ritwickdey.LiveServer
 sanity-io.vscode-sanity
@@ -36,6 +42,7 @@ softwaredotcom.swdc-vscode
 stylelint.vscode-stylelint
 usernamehw.errorlens
 webhint.vscode-webhint
+wingrunr21.vscode-ruby
 wix.glean
 wix.vscode-import-cost
 wmaurer.vscode-jumpy

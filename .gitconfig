@@ -29,21 +29,13 @@
 	current = rev-parse --abbrev-ref HEAD
 [pager]
 	branch = false
-[include]
-  path = /home/adam/.netlify/helper/git-config
-[include]
-  path = /home/adam/.netlify/helper/git-config
-[include]
-  path = /home/adam/.netlify/helper/git-config
-[credential]
-	helper = cache --timeout=9999999999
-	helper = netlify
-[include]
-  path = /home/adam/.netlify/helper/git-config
+# [include]
+#   path = /home/adam/.netlify/helper/git-config
+# [credential]
+# 	helper = cache --timeout=9999999999
+# 	helper = netlify
 [init]
 	defaultBranch = main
-[include]
-  path = /home/adam/.config/netlify/helper/git-config
 [hub]
 	protocol = ssh
 [diff]
