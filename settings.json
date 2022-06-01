@@ -104,7 +104,7 @@
   "less.validate": false,
   "scss.validate": false,
   "explorer.confirmDelete": false,
-  "window.zoomLevel": 3,
+  "window.zoomLevel": 2,
   "todo-tree.general.tags": [
     "BUG",
     "HACK",
