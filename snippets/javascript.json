@@ -11,7 +11,7 @@
   "Import React": {
     "prefix": "react",
     "body": "import React from 'react';",
-    "description": ":Import React"
+    "description": ":Custom: Import React"
   },
   "Print to console": {
     "prefix": "log",

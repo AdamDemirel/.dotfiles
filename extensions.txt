@@ -11,6 +11,7 @@ Divlo.vscode-styled-jsx-languageserver
 eamodio.gitlens
 ecmel.vscode-html-css
 EditorConfig.EditorConfig
+esbenp.prettier-vscode
 groksrc.ruby
 Gruntfuggly.todo-tree
 HookyQR.beautify

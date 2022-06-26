@@ -1,7 +1,8 @@
 {
-  // window settings
+  "// WINDOW SETTINGS //": "",
   "window.title": "${activeEditorMedium}${separator}${rootName}",
-  // theme
+  "window.zoomLevel": 2,
+  "// THEME SETTINGS //": "",
   "workbench.colorTheme": "Atom One Dark",
   "workbench.colorCustomizations": {
     "activityBarBadge.background": "#388E3C",
@@ -24,7 +25,7 @@
     "menu.selectionForeground": "#388E3C",
     "menubar.selectionForeground": "#388E3C"
   },
-  // editor settings
+  "// EDITOR SETTINGS //": "",
   "editor.tabSize": 2,
   "editor.fontSize": 16,
   "editor.bracketPairColorization.enabled": true,
@@ -34,7 +35,7 @@
   "editor.renderWhitespace": "boundary",
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.accessibilitySupport": "off",
-  "editor.mouseWheelZoom": true,
+  "editor.mouseWheelZoom": false,
   "editor.minimap.enabled": false,
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
@@ -86,14 +87,14 @@
   "files.associations": {
     "*.njk": "twig",
   },
-  "[twig]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "mblode.twig-language-2",
-  },
-  "[php]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
-  },
+  // "[twig]": {
+  //   "editor.formatOnSave": true,
+  //   "editor.defaultFormatter": "mblode.twig-language-2",
+  // },
+  // "[php]": {
+  //   "editor.formatOnSave": true,
+  //   "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  // },
   "eslint.validate": [
     "javascript",
     "javascriptreact",
@@ -104,7 +105,6 @@
   "less.validate": false,
   "scss.validate": false,
   "explorer.confirmDelete": false,
-  "window.zoomLevel": 2,
   "todo-tree.general.tags": [
     "BUG",
     "HACK",
@@ -129,8 +129,8 @@
   // other
   "editor.codeLens": false,
   "markdown-preview-github-styles.colorTheme": "light",
-  "redhat.telemetry.enabled": false,
   "xml.symbols.maxItemsComputed": 100000,
   "security.workspace.trust.untrustedFiles": "open",
-  "editor.foldingMaximumRegions": 10000
+  "editor.foldingMaximumRegions": 10000,
+  "workbench.panel.defaultLocation": "right"
 }

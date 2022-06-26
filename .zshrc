@@ -2,6 +2,7 @@
 
 ## DIRECTORY ALIASES
 alias blazer2=/home/adam/Code/blazer-theme-2.0
+alias gme=/home/adam/Code/goodnessme-website
 
 ## GIT ALIASES
 alias co="git checkout"
