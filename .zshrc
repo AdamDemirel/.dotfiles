@@ -132,6 +132,8 @@ alias audit="npm audit --production" # see https://overreacted.io/npm-audit-brok
 alias i="npm install"
 alias listlinked="npm ls -g --depth=0 --link=true"
 alias run="npm run" # lists npm scripts
+# see https://sabljakovich.medium.com/how-to-use-npm-packages-with-node-js-repl-sessions-cd77300ebfe2
+alias node_repl_w_global_packages="NODE_PATH=$(npm root -g) node"
 
 ## UTILITY/HELPER ALIASES
 alias job="xdg-open https://www.notion.so/ && $job_name && code . && cd design/ && st"
