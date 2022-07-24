@@ -71,7 +71,8 @@
   // linters/formatters
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
-    "source.fixAll.stylelint": true
+    "source.fixAll.stylelint": true,
+    "source.organizeImports": true,
   },
   "[javascript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
