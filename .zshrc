@@ -4,6 +4,10 @@
 alias blazer2=/home/adam/Code/blazer-theme-2.0
 alias gme=/home/adam/Code/goodnessme-website
 
+## UPDATE ALIASES (to avoid remembering package names)
+alias update:chrome="yaourt -S google-chrome"
+alias update:vscode="yaourt -S visual-studio-code-bin" # official non OSS version
+
 ## GIT ALIASES
 alias co="git checkout"
 alias gs="git status"

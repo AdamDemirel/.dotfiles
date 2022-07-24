@@ -82,10 +82,10 @@
   "liquid.format": true,
   "[liquid]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "sissel.shopify-liquid",
+    "editor.defaultFormatter": "sissel.shopify-liquid"
   },
   "files.associations": {
-    "*.njk": "twig",
+    "*.njk": "twig"
   },
   // "[twig]": {
   //   "editor.formatOnSave": true,
@@ -99,7 +99,7 @@
     "javascript",
     "javascriptreact",
     "typescript",
-    "typescriptreact",
+    "typescriptreact"
   ],
   "css.validate": false,
   "less.validate": false,
@@ -132,5 +132,8 @@
   "xml.symbols.maxItemsComputed": 100000,
   "security.workspace.trust.untrustedFiles": "open",
   "editor.foldingMaximumRegions": 10000,
-  "workbench.panel.defaultLocation": "right"
+  "workbench.panel.defaultLocation": "right",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

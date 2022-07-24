@@ -16,7 +16,7 @@
   "Print to console": {
     "prefix": "log",
     "body": [
-      "console.log('$1', $2);",
+      "console.log(\"$1\", $2)",
       "$0",
     ],
     "description": ":Logger"
