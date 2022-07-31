@@ -18,6 +18,7 @@ HookyQR.beautify
 hoovercj.ruby-linter
 humao.rest-client
 IronGeek.vscode-env
+jasonn-porch.gitlab-mr
 jasonnutter.search-node-modules
 jock.svg
 jpoissonnier.vscode-styled-components
