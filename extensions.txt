@@ -23,6 +23,7 @@ jasonnutter.search-node-modules
 jock.svg
 jpoissonnier.vscode-styled-components
 jtr.vscode-position
+kumar-harsh.graphql-for-vscode
 mblode.twig-language-2
 mechatroner.rainbow-csv
 mgmcdermott.vscode-language-babel
@@ -31,6 +32,7 @@ misogi.ruby-rubocop
 moshfeu.compare-folders
 ms-vsliveshare.vsliveshare
 oderwat.indent-rainbow
+orsenkucher.vscode-graphql
 pdconsec.vscode-print
 rebornix.ruby
 redhat.vscode-xml
