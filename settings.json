@@ -35,7 +35,6 @@
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.accessibilitySupport": "off",
   "editor.mouseWheelZoom": false,
-  "editor.minimap.enabled": false,
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.wordWrap": "on",
@@ -59,9 +58,7 @@
     "twig": "html"
   },
   "terminal.integrated.fontSize": 12,
-  "turboConsoleLog.addSemicolonInTheEnd": true,
   "turboConsoleLog.logMessagePrefix": "",
-  "turboConsoleLog.quote": "'",
   "turboConsoleLog.insertEnclosingClass": false,
   "turboConsoleLog.insertEnclosingFunction": false,
   "turboConsoleLog.includeFileNameAndLineNum": false,
@@ -142,5 +139,8 @@
   },
   "[graphql]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "gitlens.advanced.messages": {
+    "suppressRebaseSwitchToTextWarning": true
   }
 }
