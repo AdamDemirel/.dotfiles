@@ -34,6 +34,7 @@ alias glog='git log --oneline'
 # and add commit commands
 alias ga='git add'
 alias gac='git add . && git commit -m'
+alias gacp='gac && p'
 alias gc='git commit -m'
 alias amend="git commit --amend"
 alias ammend='amend'
