@@ -5,6 +5,7 @@ alias blazer2=/home/adam/Code/blazer-theme-2.0
 alias gme=/home/adam/Code/goodnessme-website
 
 ## UPDATE ALIASES (to avoid remembering package names)
+# https://developer.chrome.com/tags/new-in-chrome/
 alias update:chrome="yaourt -S google-chrome"
 alias update:vscode="yaourt -S visual-studio-code-bin" # official non OSS version
 

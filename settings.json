@@ -141,6 +141,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "gitlens.advanced.messages": {
-    "suppressRebaseSwitchToTextWarning": true
+    "suppressRebaseSwitchToTextWarning": false
   }
 }
