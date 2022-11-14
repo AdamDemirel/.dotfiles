@@ -7,6 +7,7 @@ alias gme=/home/adam/Code/goodnessme-website
 ## UPDATE ALIASES (to avoid remembering package names)
 # https://developer.chrome.com/tags/new-in-chrome/
 alias update:chrome="yaourt -S google-chrome"
+# https://code.visualstudio.com/updates
 alias update:vscode="yaourt -S visual-studio-code-bin" # official non OSS version
 
 ## GIT ALIASES
