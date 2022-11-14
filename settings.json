@@ -1,7 +1,7 @@
 {
-  "// WINDOW SETTINGS //": "",
+  "_____WINDOW SETTINGS_____": "",
   "window.title": "${activeEditorMedium}${separator}${rootName}",
-  "// THEME SETTINGS //": "",
+  "_____THEME SETTINGS_____": "",
   "workbench.colorTheme": "Atom One Dark",
   "workbench.colorCustomizations": {
     "activityBarBadge.background": "#388E3C",
@@ -24,7 +24,7 @@
     "menu.selectionForeground": "#388E3C",
     "menubar.selectionForeground": "#388E3C"
   },
-  "// EDITOR SETTINGS //": "",
+  "_____EDITOR SETTINGS_____": "",
   "editor.tabSize": 2,
   "editor.fontSize": 16,
   "editor.bracketPairColorization.enabled": true,
@@ -52,7 +52,7 @@
   "workbench.editor.enablePreview": false,
   "workbench.sideBar.location": "left",
   "editor.scrollBeyondLastLine": false,
-  // plugin settings
+  "_____PLUGIN SETTINGS_____": "",
   "emmet.includeLanguages": {
     "html": "css",
     "twig": "html"
@@ -64,7 +64,7 @@
   "turboConsoleLog.includeFileNameAndLineNum": false,
   "liveServer.settings.donotVerifyTags": true,
   "liveServer.settings.donotShowInfoMsg": true,
-  // linters/formatters
+  "_____LINTERS/FORMATTERS_____": "",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
     "source.fixAll.stylelint": true,
@@ -123,7 +123,7 @@
   "[css]": {
     "editor.defaultFormatter": "stylelint.vscode-stylelint"
   },
-  // other
+  "_____OTHER_____": "",
   "editor.codeLens": false,
   "markdown-preview-github-styles.colorTheme": "light",
   "xml.symbols.maxItemsComputed": 100000,
@@ -142,5 +142,7 @@
   },
   "gitlens.advanced.messages": {
     "suppressRebaseSwitchToTextWarning": false
-  }
+  },
+  "____ZEN MODE_____": "",
+  "zenMode.hideTabs": false,
 }
