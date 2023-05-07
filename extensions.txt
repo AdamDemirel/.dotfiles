@@ -1,4 +1,3 @@
-abusaidm.html-snippets
 akamud.vscode-theme-onedark
 benjaminadk.emojis4git
 bierner.markdown-preview-github-styles
@@ -14,7 +13,6 @@ EditorConfig.EditorConfig
 esbenp.prettier-vscode
 groksrc.ruby
 Gruntfuggly.todo-tree
-HookyQR.beautify
 hoovercj.ruby-linter
 humao.rest-client
 IronGeek.vscode-env

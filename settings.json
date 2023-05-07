@@ -1,6 +1,8 @@
 {
   "_____WINDOW SETTINGS_____": "",
   "window.title": "${activeEditorMedium}${separator}${rootName}",
+  "window.commandCenter": true,
+  "window.titleBarStyle": "custom",
   "_____THEME SETTINGS_____": "",
   "workbench.colorTheme": "Atom One Dark",
   "workbench.colorCustomizations": {
@@ -40,7 +42,7 @@
   "editor.wordWrap": "on",
   "editor.maxTokenizationLineLength": 50000,
   "editor.cursorBlinking": "smooth",
-  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorSmoothCaretAnimation": "on",
   "json.maxItemsComputed": 50000,
   "explorer.sortOrder": "type", // filesFirst, def: alphabet, modified
   "workbench.startupEditor": "newUntitledFile",
@@ -50,8 +52,8 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "workbench.editor.enablePreview": false,
-  "workbench.sideBar.location": "left",
   "editor.scrollBeyondLastLine": false,
+  "git.mergeEditor": true,
   "_____PLUGIN SETTINGS_____": "",
   "emmet.includeLanguages": {
     "html": "css",
@@ -133,7 +135,6 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "window.zoomLevel": 2,
   "[typescript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
@@ -145,4 +146,7 @@
   },
   "____ZEN MODE_____": "",
   "zenMode.hideTabs": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "git.openRepositoryInParentFolders": "never",
+  "window.zoomLevel": 2,
 }

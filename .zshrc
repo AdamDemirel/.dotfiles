@@ -3,6 +3,7 @@
 ## DIRECTORY ALIASES
 alias blazer2=/home/adam/Code/blazer-theme-2.0
 alias gme=/home/adam/Code/goodnessme-website
+alias homees=/home/adam/Code/homees
 
 ## UPDATE ALIASES (to avoid remembering package names)
 # https://developer.chrome.com/tags/new-in-chrome/
@@ -143,6 +144,7 @@ alias run="npm run" # lists npm scripts
 alias node_repl_w_global_packages="NODE_PATH=$(npm root -g) node"
 
 ## UTILITY/HELPER ALIASES
+alias homees='cd ~/Code/Homees/frontend && code . && st'
 alias job="xdg-open https://www.notion.so/ && $job_name && code . && cd design/ && st"
 alias jobdir="cd $job_name"
 alias inotify="echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p"
@@ -298,3 +300,5 @@ export PATH=~/.npm-global/bin:$PATH
 export PNPM_HOME="/home/adam/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
